@@ -6,6 +6,6 @@ export const colors = {
   warning: '#ff9800', // Orange
   info: '#2196f3', // Light Blue
   background: '#f5f5f5', // Light Grey
-  text: '#212121', // Dark Grey
+  text: '#9E9E9E', // Dark Grey
   border: '#9E9E9E', // Dark Grey,
 }
