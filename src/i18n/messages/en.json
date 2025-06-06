@@ -1,4 +1,8 @@
 {
   "title": "title",
-  "hello": "Hello, world!"
+  "hello": "Hello, world!",
+  "FeedBackForm": {
+    "ReadyToDiscuss": "Ready to discuss your project?",
+    "downloadBrif": "Download brif"
+  }
 }

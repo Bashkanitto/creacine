@@ -1,4 +1,12 @@
 {
   "title": "титл",
-  "hello": "Привет!"
+  "hello": "Привет!",
+  "FeedBackForm": {
+    "ReadyToDiscuss": "Готовы обсудить ваш проект?",
+    "downloadBrif": "Скачать бриф",
+    "sendMessage": "Отправить сообщение",
+    "attachFile": "Прикрепить файл",
+    "name": "Имя",
+    "telegramOrEmail": "Телеграм или Email"
+  }
 }
