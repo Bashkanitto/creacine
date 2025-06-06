@@ -8,5 +8,8 @@
     "attachFile": "Прикрепить файл",
     "name": "Имя",
     "telegramOrEmail": "Телеграм или Email"
+  },
+  "header": {
+    "discussProject": "Обсудить проект"
   }
 }
