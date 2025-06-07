@@ -1,9 +1,9 @@
 'use client'
 import { Link as LinkIcon, Paperclip } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { CustomInput } from '../../components/CustomInput'
+import { CustomInput } from '../../../components/CustomInput'
 import { colors } from '@/constants/colors'
-import { CustomButton } from '../../components/CustomButton'
+import { CustomButton } from '../../../components/CustomButton'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -20,10 +20,13 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
 
   return (
     <section
-      style={{ background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')" }}
-      className="w-full bg-no-repeat h-[752px]"
+      style={{
+        background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')",
+        backgroundRepeat: 'no-repeat',
+      }}
+      className="w-full h-[752px]"
     >
-      <div className="flex w-[90%] mx-auto">
+      <div className="flex w-[88%] mx-auto">
         <div className="w-[80%] rounded-r-4xl mt-[100px]">
           <h1 className="text-[58px] w-[70%] text-white">{t('ReadyToDiscuss')}</h1>
           <Link href="#" className="mt-2 underline flex gap-2 text-white">
