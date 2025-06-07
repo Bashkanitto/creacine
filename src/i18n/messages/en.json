@@ -6,6 +6,11 @@
     "downloadBrif": "Download brif"
   },
    "header": {
-    "discussProject": "Discuss project"
+    "discussProject": "Discuss project",
+    "abount":"Abount",
+    "portfolio":"Portfolio",
+    "services":"Services",
+    "reviews":"Reviews",
+    "articles":"Articles"
   }
 }

@@ -10,6 +10,11 @@
     "telegramOrEmail": "Телеграм или Email"
   },
   "header": {
-    "discussProject": "Обсудить проект"
+    "discussProject": "Обсудить проект",
+    "abount":"О нас",
+    "portfolio":"Портфолио",
+    "services":"Услуги",
+    "reviews":"Отзывы",
+    "articles":"Статьи"
   }
 }
