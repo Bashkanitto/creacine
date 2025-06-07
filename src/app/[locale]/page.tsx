@@ -45,8 +45,10 @@ export default function HomePage() {
   return (
     <main className="w-[1440px] mx-auto p-4">
       <Header />
-      <section className="hero h-[670px]"></section>
-      <section className="flex gap-[30px] w-[88%] mx-auto">
+      <section className="hero h-[690px]">
+        <img src="/images/hero.png" alt="" />
+      </section>
+      <section className="flex gap-[30px] w-[88%] mx-auto mt-[100px]">
         <div>
           <p style={{ color: colors.text }}>ПРОВЕРЕНО РЕЗУЛЬТАТАМИ</p>
           <h2 className="mt-[20px]">Как мы помогаем бизнесу расти</h2>
