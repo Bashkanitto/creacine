@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-black h-[412px] w-full text-white">
       <div className="flex gap-[50px] pt-[100px] px-[100px]">
         <div className="w-full">
-          <h2 className="text-[58px]">2.47</h2>
+          <h2>2.47</h2>
           <p className="flex gap-2 items-center text-[30px]">
             <Mail />
             dvasoroksem@gmail.com
@@ -23,10 +23,10 @@ const Footer = () => {
           <p>ул. Калибек Куанышбаев, 11Б, Астана, Казахстан</p>
           <div className="flex gap-2 mt-[25px]">
             <Link href="#">
-              <img src="/icons/instagram.svg" alt="" />
+              <img src="/icons/instagram.svg" alt="instagram" />
             </Link>
             <Link href="#">
-              <img src="/icons/tiktok.svg" alt="" />
+              <img src="/icons/tiktok.svg" alt="tiktok" />
             </Link>
           </div>
         </div>
