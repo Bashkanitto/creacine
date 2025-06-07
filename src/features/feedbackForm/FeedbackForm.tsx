@@ -7,7 +7,7 @@ import { CustomButton } from '../../components/CustomButton'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export function FeedbackForm() {
+export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   const [selectedAim, setSelectedAim] = useState<number | null>(null)
   const t = useTranslations('FeedBackForm')
 
@@ -19,7 +19,10 @@ export function FeedbackForm() {
   ]
 
   return (
-    <section className="w-full bg-[url('/images/feedbackBackground.jpg')] bg-no-repeat h-[752px]">
+    <section
+      style={{ background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')" }}
+      className="w-full bg-no-repeat h-[752px]"
+    >
       <div className="flex w-[90%] mx-auto">
         <div className="w-[80%] rounded-r-4xl mt-[100px]">
           <h1 className="text-[58px] w-[70%] text-white">{t('ReadyToDiscuss')}</h1>
