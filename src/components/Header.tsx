@@ -44,9 +44,11 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex items-center gap-2">
-        <CustomButton type="button" className="w-[220px] hidden md:flex">
-          {t('discussProject')}
-        </CustomButton>
+        <Link href="/form">
+          <CustomButton type="button" className="w-[220px] hidden md:flex">
+            {t('discussProject')}
+          </CustomButton>
+        </Link>
         <button className="flex md:hidden h-full">
           <Menu />
         </button>
