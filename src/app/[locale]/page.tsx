@@ -2,53 +2,22 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ServicesSection from '@/components/services'
 import { colors } from '@/constants/colors'
-import { FeedbackForm } from '@/features/feedbackForm/FeedbackForm'
+import { FeedbackForm } from '@/features/feedbackForm/ui'
+import Reviews from '@/features/reviews/ui'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 export default function HomePage() {
-  const reviews = [
-    {
-      id: 0,
-      image: '/images/review1.png',
-      comment:
-        '"Сотрудничество с двасороксемь - это про стратегию, вовлеченность и маркетинг, который работает"',
-      name: 'Дидар Шаухаров',
-      role: 'Qazaqstan catecing solutions',
-    },
-    {
-      id: 1,
-      image: '/images/review2.png',
-      comment:
-        '"Сотрудничество с двасороксемь - это про стратегию, вовлеченность и маркетинг, который работает"',
-      name: 'Дидар Шаухаров',
-      role: 'Qazaqstan catecing solutions',
-    },
-  ]
-  const videos = [
-    {
-      id: 0,
-      video: '/images/video1.png',
-    },
-    {
-      id: 1,
-      video: '/images/video2.png',
-    },
-    {
-      id: 2,
-      video: '/images/video3.png',
-    },
-  ]
   const t = useTranslations()
 
   return (
-    <main className="w-[1440px] mx-auto p-4">
+    <main className="w-[1440px] mx-auto overflow-x-hidden">
       <Header />
       <section className="hero h-[690px]">
         <img src="/images/hero.png" alt="" />
       </section>
-      <section className="flex gap-[30px] w-[88%] mx-auto mt-[100px]">
+      <section className="flex gap-[30px] w-[86%] mx-auto mt-[100px]">
         <div>
           <p style={{ color: colors.text }}>ПРОВЕРЕНО РЕЗУЛЬТАТАМИ</p>
           <h2 className="mt-[20px]">Как мы помогаем бизнесу расти</h2>
@@ -59,7 +28,7 @@ export default function HomePage() {
         <img src="/images/business.png" alt="business" />
       </section>
 
-      <section className="team w-[88%] mx-auto mt-[200px] flex gap-[50px]">
+      <section className="team w-[86%] mx-auto mt-[200px] flex gap-[50px]">
         <img src="/images/team.png" alt="our team" />
         <div>
           <p style={{ color: colors.text }}>МАРКЕТИНГ, КОТОРЫЙ РАБОТАЕТ</p>
@@ -74,7 +43,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="services w-[88%] mx-auto mt-[200px]">
+      <section className="services w-[86%] mx-auto mt-[200px]">
         <p className="text-center" style={{ color: colors.text }}>
           ЧТО МЫ ДЕЛАЕМ
         </p>
@@ -82,30 +51,8 @@ export default function HomePage() {
         <ServicesSection />
       </section>
 
-      <section className="about w-[88%] mx-auto mt-[200px]">
-        <p className="text-center" style={{ color: colors.text }}>
-          КЛИЕНТЫ О НАС
-        </p>
-        <h2 className="text-center mt-[20px]">РЕАЛЬНЫЕ КЕЙСЫ, РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ</h2>
-        <div className="flex gap-[30px] overflow-x-scroll mt-[50px]">
-          {reviews.map((review) => (
-            <div
-              style={{ background: colors.background }}
-              key={review.id}
-              className="flex flex-col gap-[25px] items-center p-[50px] rounded-[30px]"
-            >
-              <p className="text-center w-[80%]">{review.comment}</p>
-              <Image width={75} height={75} src={review.image} alt="author avatar" />
-              <h3>{review.name}</h3>
-              <p style={{ color: colors.text }}>{review.role}</p>
-            </div>
-          ))}
-        </div>
-        <div className="video overflow-x-scroll mt-[50px] flex gap-[30px]">
-          {videos.map((video) => (
-            <Image key={video.id} width={395} height={760} src={video.video} alt="author avatar" />
-          ))}
-        </div>
+      <section className="about w-[86%] mx-auto mt-[200px]">
+        <Reviews />
       </section>
 
       <section

@@ -1,7 +1,7 @@
 'use client'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { FeedbackForm } from '@/features/feedbackForm/FeedbackForm'
+import { FeedbackForm } from '@/features/feedbackForm/ui'
 
 export default function FormPage() {
   return (
