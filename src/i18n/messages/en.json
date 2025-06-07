@@ -1,11 +1,38 @@
 {
   "title": "title",
   "hello": "Hello, world!",
+  "ourServices":"Our services",
+  "provenByResults":"PROVEN BY RESULTS",
+  "howWeHelpBusinesses":"How we help businesses grow",
+  "seeAllCases":"See all cases",
   "FeedBackForm": {
     "ReadyToDiscuss": "Ready to discuss your project?",
     "downloadBrif": "Download brif"
   },
    "header": {
-    "discussProject": "Discuss project"
+    "discussProject": "Discuss project",
+    "about":"About",
+    "portfolio":"Portfolio",
+    "services":"Services",
+    "reviews":"Reviews",
+    "articles":"Articles"
+  },
+   "footer":{
+    "dvasoroksemGroupAllRightsReserveded":"DVASOROKSEM GROUP - ALL RIGHTS RESERVED",
+    "address":"st. Kalibek Kuanyshbaev, 11B, Astana, Kazakhstan"
+  },
+  "services":{
+    "integratedMarketing":"Integrated marketingг",
+    "fullCycleSolutionsForGrowth":"A complete cycle of growth solutions",
+    "marketingStrategies":"Marketing strategies",
+    "planForBusiness":"A clear action plan for business",
+    "managingContenten":"Managing content, engaging audiences",
+    "videoPhotoCreative":"Video, photo, creative for brands",
+    "turnkeyPromotion":"Turnkey promotion and trends",
+    "branding":"Branding",
+    "weShapetheImage":"We shape the image and values ​​of the company",
+    "moreDetails":"More details"
+
   }
+
 }

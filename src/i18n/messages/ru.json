@@ -1,6 +1,10 @@
 {
   "title": "титл",
   "hello": "Привет!",
+  "ourServices":"Наши услуги",
+  "provenByResults":"ПРОВЕРЕНО РЕЗУЛЬТАТАМИ",
+  "howWeHelpBusinesses":"Как мы помогаем бизнесу расти",
+  "seeAllCases":"Смотреть все кейсы",
   "FeedBackForm": {
     "ReadyToDiscuss": "Готовы обсудить ваш проект?",
     "downloadBrif": "Скачать бриф",
@@ -10,6 +14,29 @@
     "telegramOrEmail": "Телеграм или Email"
   },
   "header": {
-    "discussProject": "Обсудить проект"
+    "discussProject": "Обсудить проект",
+    "about":"О нас",
+    "portfolio":"Портфолио",
+    "services":"Услуги",
+    "reviews":"Отзывы",
+    "articles":"Статьи"
+  },
+  "footer":{
+    "dvasoroksemGroupAllRightsReserveded":"ГРУППА DVASOROKSEM - ВСЕ ПРАВА ЗАЩИЩЕНЫ",
+    "address":"ул. Калибек Куанышбаев, 11Б, Астана, Казахстан"
+  },
+   "services":{
+    "integratedMarketing":"Комплексный маркетинг",
+    "fullCycleSolutionsForGrowth":"Полный цикл решений для роста",
+    "marketingStrategies":"Маркетинговые стратегии",
+    "planForBusiness":"Четкий план действий для бизнеса",
+    "managingContenten":"Управляем контентом, вовлекаем аудиторию",
+    "videoPhotoCreative":"Видео, фото, креатив для брендов",
+    "turnkeyPromotion":"Продвижение и тренды под ключ",
+    "branding":"Брендинг",
+    "weShapetheImage":"Формируем облик и ценности компании",
+    "moreDetails":"Подробнее"
+   
+
   }
 }

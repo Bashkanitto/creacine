@@ -1,9 +1,10 @@
 import React from 'react'
 import { Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
-  // const t = useTranslations('footer')
+  const t = useTranslations('footer')
 
   return (
     <footer className="bg-black h-[412px] w-full text-white">
@@ -20,7 +21,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col justify-end w-full ">
-          <p>ул. Калибек Куанышбаев, 11Б, Астана, Казахстан</p>
+          <p>{t('address')}</p>
           <div className="flex gap-2 mt-[25px]">
             <Link href="#">
               <img src="/icons/instagram.svg" alt="instagram" />
@@ -32,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-[60px] w-[87%] mx-auto text-neutral-700" />
-      <p className="flex justify-center mt-[30px]">DVASOROKSEM GROUP - ALL RIGHTS RESERVED</p>
+      <p className="flex justify-center mt-[30px]">{t('dvasoroksemGroupAllRightsReserveded')}</p>
     </footer>
   )
 }

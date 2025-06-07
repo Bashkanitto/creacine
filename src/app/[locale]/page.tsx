@@ -19,10 +19,10 @@ export default function HomePage() {
       </section>
       <section className="flex gap-[30px] w-[86%] mx-auto mt-[100px]">
         <div>
-          <p style={{ color: colors.text }}>ПРОВЕРЕНО РЕЗУЛЬТАТАМИ</p>
-          <h2 className="mt-[20px]">Как мы помогаем бизнесу расти</h2>
+          <p style={{ color: colors.text }}>{t('provenByResults')}</p>
+          <h2 className="mt-[20px]">{t('howWeHelpBusinesses')}</h2>
           <button className="w-[321px] border rounded-full mt-[280px] px-4 py-2 flex justify-center">
-            Смотреть все кейсы <ArrowRight />
+            {t('seeAllCases')} <ArrowRight />
           </button>
         </div>
         <img src="/images/business.png" alt="business" />
@@ -47,7 +47,7 @@ export default function HomePage() {
         <p className="text-center" style={{ color: colors.text }}>
           ЧТО МЫ ДЕЛАЕМ
         </p>
-        <h2 className="text-center">Наши услуги</h2>
+        <h2 className="text-center">{t('ourServices')}</h2>
         <ServicesSection />
       </section>
 
