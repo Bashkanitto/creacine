@@ -3,75 +3,77 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { colors } from '@/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function AboutPage() {
+  const t = useTranslations('about')
   const aboutSteps = [
     {
-      h3: 'Маркетинговые стратегии',
+      h3: t('marketingStrategies'),
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('nicheAnalysis'),
+        t('brandStrategy'),
+        t('toneOfVoice'),
+        t('contentStrategy'),
+        t('mediaStrategy'),
+        t('growthPlan'),
       ],
     },
     {
-      h3: 'Маркетинговые стратегии',
+      h3: 'SMM',
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('contentPlan'),
+        t('platforms'),
+        t('communityEngagement'),
+        t('adsLaunch'),
+        t('influencerMarketing'),
+        t('analytics'),
       ],
     },
     {
-      h3: 'Маркетинговые стратегии',
+      h3: 'Production',
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('brandedContent'),
+        t('adAndImageVideos'),
+        t('creativeConcepts'),
+        t('motionDesign'),
+        t('socialAndDigitalContent'),
+        t('postProduction'),
       ],
     },
     {
-      h3: 'Маркетинговые стратегии',
+      h3: 'TikTok',
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('contentStrateg'),
+        t('trendyContent'),
+        t('bloggersAndChallenges'),
+        t('tiktokAds'),
+        t('accountDevelopment'),
+        t('analytic'),
       ],
     },
     {
-      h3: 'Маркетинговые стратегии',
+      h3: t('ai'),
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('ai_integration'),
+        t('content_generation'),
+        t('personalized_recommendations'),
+        t('big_data_analysis'),
+        t('chatbot_development'),
+        t('ad_campaign_automation'),
       ],
     },
     {
-      h3: 'Маркетинговые стратегии',
+      h3: 'IT',
       list: [
-        'Анализ ниши и аудит конкурентов',
-        'Позиционирование и стратегия бренда',
-        'Раззработка tone of voice',
-        ' Контент- и SMM-стратегия',
-        'Медиа- и PR-стратегия',
-        'План продвижения и роста',
+        t('web_development'),
+        t('ux_ui_design'),
+        t('crm_automation'),
+        t('chatbots_voice_assistants'),
+        t('mobile_app_development'),
+        t('data_analytics_reporting'),
       ],
     },
   ]
@@ -79,53 +81,53 @@ export default function AboutPage() {
     <div className="w-[1440px] mx-auto">
       <Header />
       <section className="pt-[200px] w-[88%] mx-auto">
-        <h2 className="w-2/3 text-center mx-auto">Мы создаем маркетинг, который работает</h2>
+        <h2 className="w-2/3 text-center mx-auto">{t('we_create_marketing')}</h2>
         <div className="flex justify-between items-center mt-[50px] text-white">
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
           >
-            <h3>Стратегия</h3>
-            <p>Долгосрочные решения для сильного бренда</p>
+            <h3>{t('strategy_title')}</h3>
+            <p>{t('strategy_text')}</p>
           </div>
           <div
             style={{ background: colors.primary }}
             className="w-[390px] h-[220px] p-[35px] rounded-[30px]"
           >
             <Image width={75} height={75} src="/icons/laptopIcon.png" alt="laptop icon" />
-            <h3>Продвижение</h3>
-            <p>Digital, SMM, реклама и PR</p>
+            <h3>{t('promotion_title')}</h3>
+            <p>{t('promotion_text')}</p>
           </div>
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
           >
-            <h3>Контент</h3>
-            <p>Креатив, который вовлекает и продает</p>
+            <h3>{t('content_title')}</h3>
+            <p>{t('content_text')}</p>
           </div>
         </div>
 
         <p className="text-center mt-[120px]" style={{ color: colors.text }}>
-          ЧТО МЫ УМЕЕМ
+          {t('what_we_do')}
         </p>
-        <h2 className="text-center w-[60%] mx-auto">Наши услуги</h2>
+        <h2 className="text-center w-[60%] mx-auto">{t('our_services')}</h2>
 
         <div className="aboutSteps mt-[50px]">
           <div
             style={{ background: colors.primary }}
             className="flex p-[35px] gap-[50px] text-white rounded-[35px]"
           >
-            <h2 className="w-full">Комплексный маркетинг</h2>
+            <h2 className="w-full">{t('comprehensive_marketing')}</h2>
             <ul className="w-full list-dotted text-[30px] list-disc">
-              <li>Instagram</li>
-              <li>TikTok</li>
-              <li>SEO, Контекстная реклама</li>
-              <li>Карты</li>
-              <li>Чат бот</li>
-              <li>PR - работа с блогерами </li>
-              <li>Работа с информационными платформами</li>
-              <button>nav</button>
+              <li>{t('instagram')}</li>
+              <li>{t('tiktok')}</li>
+              <li>{t('seo_ads')}</li>
+              <li>{t('maps')}</li>
+              <li>{t('chat_bot')}</li>
+              <li>{t('pr_bloggers')}</li>
+              <li>{t('info_platforms')}</li>
             </ul>
+            <button>nav</button>
           </div>
           <div className="grid grid-cols-2 gap-[30px] mt-[50px]">
             {aboutSteps.map((step, index) => (
@@ -149,16 +151,14 @@ export default function AboutPage() {
             style={{ background: colors.background }}
             className="mt-[35px] p-[35px] rounded-[35px]"
           >
-            <h3 className="w-full">Брендинг</h3>
+            <h3 className="w-full">{t('branding')}</h3>
             <ul className="w-full list-dotted list-disc ml-10 mt-2">
-              <li>Instagram</li>
-              <li>TikTok</li>
-              <li>SEO, Контекстная реклама</li>
-              <li>Карты</li>
-              <li>Чат бот</li>
-              <li>PR - работа с блогерами </li>
-              <li>Работа с информационными платформами</li>
-              <button>nav</button>
+              <li>{t('brand_positioning')}</li>
+              <li>{t('naming_slogan')}</li>
+              <li>{t('logo_identity')}</li>
+              <li>{t('guideline_brandbook')}</li>
+              <li>{t('digital_offline_assets')}</li>
+              <li>{t('tone_of_voice')}</li>
             </ul>
           </div>
         </div>

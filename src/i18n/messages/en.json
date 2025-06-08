@@ -33,6 +33,78 @@
     "weShapetheImage":"We shape the image and values ​​of the company",
     "moreDetails":"More details"
 
+  },
+  "about":{
+    "marketingStrategies": "Marketing strategies",
+    "nicheAnalysis": "Niche analysis and competitor audit",
+    "brandStrategy": "Brand positioning and strategy",
+    "toneOfVoice": "Tone of voice development",
+    "contentStrategy": "Content and SMM strategy",
+    "mediaStrategy": "Media and PR strategy",
+    "growthPlan": "Promotion and growth plan",
+
+    "brandedContent": "Creation of branded photo and video content",
+    "adAndImageVideos": "Production of advertising and image videos",
+    "creativeConcepts": "Creative concepts and scripts",
+    "motionDesign": "Motion design and animation",
+    "socialAndDigitalContent": "Content for social media and digital advertising",
+    "postProduction": "Post-production and editing",
+
+    "contentPlan": "Content plan and visual concept",
+    "platforms": "Instagram, TikTok, Telegram, VKontakte",
+    "communityEngagement": "Community management and audience engagement",
+    "adsLaunch": "Advertising campaign setup and launch",
+    "influencerMarketing": "Collaborations and influencer marketing",
+    "analytics": "Content analytics and optimization",
+
+    "contentStrateg": "Content strategy development",
+    "trendyContent": "Shooting trendy content",
+    "bloggersAndChallenges": "Working with bloggers and challenges",
+    "tiktokAds": "Promotion through TikTok Ads",
+    "accountDevelopment": "Account creation and development",
+    "analytic": "Content analytics and optimization",
+
+    "ai":"AI",
+     "ai_integration": "AI integration in marketing and business processes",
+  "content_generation": "Content generation and SMM automation",
+  "personalized_recommendations": "Personalized recommendations",
+  "big_data_analysis": "Big data analysis and predictive analytics",
+  "chatbot_development": "AI chatbot development",
+  "ad_campaign_automation": "Advertising campaign automation",
+
+"web_development": "Web development and maintenance",
+  "ux_ui_design": "UX/UI design and digital products",
+  "crm_automation": "CRM and process automation",
+  "chatbots_voice_assistants": "Chatbots and voice assistants",
+  "mobile_app_development": "Mobile application development",
+  "data_analytics_reporting": "Data analytics and end-to-end reporting",
+
+  "branding": "Branding",
+  "brand_positioning": "Brand positioning development",
+  "naming_slogan": "Naming and slogan",
+  "logo_identity": "Logo and corporate identity",
+  "guideline_brandbook": "Guidelines and brand book",
+  "digital_offline_assets": "Design for digital and offline media",
+  "tone_of_voice": "Creation of visual and verbal tone of voice",
+
+  "comprehensive_marketing": "Comprehensive marketing",
+  "instagram": "Instagram",
+  "tiktok": "TikTok",
+  "seo_ads": "SEO, contextual advertising",
+  "maps": "Maps",
+  "chat_bot": "Chat bot",
+  "pr_bloggers": "PR - working with bloggers",
+  "info_platforms": "Working with informational platforms",
+  
+  "we_create_marketing": "We create marketing that works",
+  "strategy_title": "Strategy",
+  "strategy_text": "Long-term solutions for a strong brand",
+  "promotion_title": "Promotion",
+  "promotion_text": "Digital, SMM, advertising and PR",
+  "content_title": "Content",
+  "content_text": "Creative that engages and sells",
+  "what_we_do": "WHAT WE DO",
+  "our_services": "Our services"
   }
 
 }
