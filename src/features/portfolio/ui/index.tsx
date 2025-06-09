@@ -14,6 +14,7 @@ export default function PortfolioComponent() {
     'strategy',
     'any',
     'collections',
+    'tiktok',
   ]
   type PortfolioType = {
     id: number

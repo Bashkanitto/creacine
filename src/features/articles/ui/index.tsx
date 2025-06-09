@@ -17,20 +17,20 @@ export default function ArticlesComponent() {
   type ArticleType = {
     id: number
     image: string
-    message: string
+    messageKey: string
     category: string
   }
   const articles: ArticleType[] = [
     {
       id: 0,
       image: '/images/article1.png',
-      message: 'Почему маскоты являются мощным инструментом дизайна',
+      messageKey: 'articleMessage1',
       category: 'branding',
     },
     {
       id: 1,
       image: '/images/article2.png',
-      message: 'Полезные ресурсы для дизайнеров',
+      messageKey: 'articleMessage2',
       category: 'collections',
     },
   ]
@@ -38,9 +38,9 @@ export default function ArticlesComponent() {
   return (
     <>
       <p className="text-center" style={{ color: colors.text }}>
-        ЭКСПЕРТИЗА И ТРЕНДЫ
+        {t('subtitle')}
       </p>
-      <h2 className="text-center w-[60%] mx-auto">Наши статьи</h2>
+      <h2 className="text-center w-[60%] mx-auto">{t('title')}</h2>
       <div className="categories mt-[20px] flex justify-between gap-[15px] overflow-x-scroll">
         {categories.map((category) => (
           <div
@@ -67,7 +67,7 @@ export default function ArticlesComponent() {
               alt="article image"
             />
             <div className="flex flex-col justify-between items-start">
-              <p className="text-white text-[30px] leading-tight">{article.message}</p>
+              <p className="text-white text-[30px] leading-tight">{t(article.messageKey)}</p>
               <button style={{ background: 'white' }} className="py-2 px-4 rounded-full">
                 {t(article.category)}
               </button>
