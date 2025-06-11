@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { CustomButton } from './CustomButton'
 import { useTranslations } from 'next-intl'
@@ -6,54 +7,93 @@ import { Menu } from 'lucide-react'
 
 const Header = () => {
   const t = useTranslations('header')
+  const [mobileMenuActive, setMobileMenuActive] = useState(false)
+
+  function toggleMenu() {
+    setMobileMenuActive(!mobileMenuActive)
+  }
   return (
-    <header className="fixed top-[20px] left-0 right-0 h-[61px] sm:h-[104px] w-[90%] xl:w-full max-w-[1240px] mx-auto flex items-center justify-between rounded-[30px] bg-white px-[25px] shadow-lg">
-      <Link
-        href="/"
-        className="flex items-center justify-center text-6xl font-bold text-orange-500"
-      >
-        2.47
-      </Link>
-      <nav className="hidden md:flex ">
-        <ul className="flex items-center gap-x-[35px] text-[16px] font-medium text-gray-600">
-          <li>
-            <Link href="/about" className="hover:text-black">
-              {t('about')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/portfolio" className="hover:text-black">
-              {t('portfolio')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/cases" className="flex items-center gap-1 hover:text-black">
-              Услуги ▼
-            </Link>
-          </li>
-          <li>
-            <Link href="/reviews" className="hover:text-black">
-              {t('reviews')}
-            </Link>
-          </li>
-          <li>
-            <Link href="/articles" className="hover:text-black">
-              {t('articles')}
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="flex items-center gap-2">
-        <Link href="/form">
-          <CustomButton type="button" className="w-[220px] hidden md:flex">
-            {t('discussProject')}
-          </CustomButton>
+    <>
+      <header className="fixed top-[20px] left-0 right-0 h-[61px] sm:h-[104px] w-[90%] xl:w-full max-w-[1240px] mx-auto flex items-center justify-between rounded-[30px] bg-white px-[25px] shadow-lg">
+        <Link
+          href="/"
+          className="flex items-center justify-center text-3xl sm:text-6xl font-bold text-black sm:text-orange-500"
+        >
+          2.47
         </Link>
-        <button className="flex md:hidden h-full">
-          <Menu />
-        </button>
-      </div>
-    </header>
+        <nav className="hidden md:flex ">
+          <ul className="flex items-center gap-x-[35px] text-[16px] font-medium text-gray-600">
+            <li>
+              <Link href="/about" className="hover:text-black">
+                О нас
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio" className="hover:text-black">
+                Портфолио
+              </Link>
+            </li>
+            <li>
+              <Link href="/cases" className="flex items-center gap-1 hover:text-black">
+                Услуги ▼
+              </Link>
+            </li>
+            <li>
+              <Link href="/reviews" className="hover:text-black">
+                Отзывы
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles" className="hover:text-black">
+                Статьи
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="flex items-center gap-2">
+          <Link className="hidden" href="/form">
+            <CustomButton type="button" className="w-[220px]">
+              {t('discussProject')}
+            </CustomButton>
+          </Link>
+          <button onClick={toggleMenu} className="flex md:hidden h-full z-10">
+            <Menu />
+          </button>
+        </div>
+      </header>
+
+      {mobileMenuActive && (
+        <nav onClick={toggleMenu} className="mobileMenu absolute left-0 top-0 p-5 bg-white w-full">
+          <ul className="w-full">
+            <li className="w-full">
+              <Link href="/about" className="hover:bg-orange-500 flex w-full h-10 p-2">
+                О нас
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio" className="hover:text-black flex w-full">
+                Портфолио
+              </Link>
+            </li>
+            <li>
+              <Link href="/cases" className="flex items-center gap-1 hover:text-black flex w-full">
+                Услуги ▼
+              </Link>
+            </li>
+            <li>
+              <Link href="/reviews" className="hover:text-black flex w-full">
+                Отзывы
+              </Link>
+            </li>
+            <li>
+              <Link href="/articles" className="hover:text-black flex w-full">
+                Статьи
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
+    </>
   )
 }
 
