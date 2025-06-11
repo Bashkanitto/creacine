@@ -40,17 +40,17 @@ export default function ReviewsComponent() {
       <p className="text-center" style={{ color: colors.text }}>
         {t('clients')}
       </p>
-      <h2 className="text-center mt-[20px] w-[60%] mx-auto">{t('realCases')}</h2>
+      <h2 className="text-center mt-[20px] w-[80%] lg:w-[60%] mx-auto">{t('realCases')}</h2>
       <div className="flex flex-col lg:flex-row gap-[30px] overflow-x-scroll mt-[50px]">
         {reviews.map((review) => (
           <div
             style={{ background: colors.background }}
             key={review.id}
-            className="flex flex-col gap-[25px] items-center p-[50px] rounded-[30px]"
+            className="flex flex-col gap-[25px] items-center p-4 lg:p-[50px] rounded-[30px]"
           >
-            <p className="text-center w-[80%]">{t(review.comment)}</p>
+            <p className="text-center w-full lg:w-[80%]">{t(review.comment)}</p>
             <Image width={75} height={75} src={review.image} alt="author avatar" />
-            <h3>{t(review.name)}</h3>
+            <h3 className="text-center">{t(review.name)}</h3>
             <p style={{ color: colors.text }}>{t(review.role)}</p>
           </div>
         ))}

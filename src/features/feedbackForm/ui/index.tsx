@@ -19,7 +19,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   ]
 
   return (
-    <section className="w-full h-[752px] mt-[30px] lg:mt-0">
+    <section className="w-full h-full lg:h-[752px] mt-[30px] lg:mt-0">
       <div className="flex flex-col items-center lg:items-start lg:flex-row h-full">
         <div
           style={{
@@ -60,7 +60,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
                   background: selectedAim === idx ? colors.primary : colors.secondary,
                   color: selectedAim === idx ? 'white' : colors.text,
                 }}
-                className="py-0 lg:py-2 rounded-full w-full text-1xl font-bold"
+                className="py-0 lg:py-2 rounded-full w-full text-[12px] lg:text-1xl font-bold"
               >
                 {t(aim.label)}
               </button>

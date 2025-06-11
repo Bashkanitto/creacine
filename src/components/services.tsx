@@ -74,7 +74,7 @@ function ServicesSection() {
           </h3>
           <p
             style={{ color: selectedService === service.id ? 'white' : colors.text }}
-            className="text-white"
+            className="text-white text-center"
           >
             {service.p}
           </p>

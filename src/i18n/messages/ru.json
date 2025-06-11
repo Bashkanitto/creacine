@@ -5,6 +5,8 @@
   "provenByResults": "ПРОВЕРЕНО РЕЗУЛЬТАТАМИ",
   "howWeHelpBusinesses": "Как мы помогаем бизнесу расти",
   "seeAllCases": "Смотреть все кейсы",
+  "trust_in_facts": "ДОВЕРИЕ В ФАКТАХ",
+  "certificates": "Cертификаты",
   "FeedBackForm": {
     "ReadyToDiscuss": "Готовы обсудить ваш проект?",
     "downloadBrif": "Скачать бриф",
@@ -111,9 +113,9 @@
     "promotion_text": "Digital, SMM, реклама и PR",
     "content_title": "Контент",
     "content_text": "Креатив, который вовлекает и продает",
-    "what_we_do": "ЧТО МЫ УМЕЕМ",
     "our_services": "Наши услуги"
   },
+  "what_we_do": "ЧТО МЫ УМЕЕМ",
   "portfolio": {
     "branding": "Комплексный",
     "marketing": "Стратегии",

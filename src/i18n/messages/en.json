@@ -5,6 +5,8 @@
   "provenByResults": "PROVEN BY RESULTS",
   "howWeHelpBusinesses": "How we help businesses grow",
   "seeAllCases": "See all cases",
+  "trust_in_facts": "Trush in facts",
+  "certificates": "Certificates",
   "FeedBackForm": {
     "ReadyToDiscuss": "Ready to discuss your project?",
     "downloadBrif": "Download brif",
@@ -111,9 +113,9 @@
     "promotion_text": "Digital, SMM, advertising and PR",
     "content_title": "Content",
     "content_text": "Creative that engages and sells",
-    "what_we_do": "WHAT WE DO",
     "our_services": "Our services"
   },
+  "what_we_do": "WHAT WE DO",
   "cases": {
     "case_content_brand_values": "Created content that conveys brand values and highlights expertise",
     "case_unique_brand_design": "Developed unique brand design: from boxes to booklets",
