@@ -39,7 +39,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/reviews" className="hover:text-black">
+              <Link href="/rыстеeviews" className="hover:text-black">
                 Отзывы
               </Link>
             </li>
@@ -51,7 +51,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <Link className="hidden" href="/form">
+          <Link className="hidden md:flex" href="/form">
             <CustomButton type="button" className="w-[220px]">
               {t('discussProject')}
             </CustomButton>
@@ -63,34 +63,61 @@ const Header = () => {
       </header>
 
       {mobileMenuActive && (
-        <nav onClick={toggleMenu} className="mobileMenu absolute left-0 top-0 p-5 bg-white w-full">
-          <ul className="w-full">
-            <li className="w-full">
-              <Link href="/about" className="hover:bg-orange-500 flex w-full h-10 p-2">
-                О нас
+        <nav
+          onClick={toggleMenu}
+          className="fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-sm transition-all duration-300 ease-in-out z-50"
+        >
+          <div className="pt-[100px] px-6">
+            <ul className="space-y-4">
+              <li>
+                <Link
+                  href="/about"
+                  className="block text-lg font-medium hover:text-orange-500 transition-colors"
+                >
+                  О нас
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/portfolio"
+                  className="block text-lg font-medium hover:text-orange-500 transition-colors"
+                >
+                  Портфолио
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cases"
+                  className="block text-lg font-medium hover:text-orange-500 transition-colors"
+                >
+                  Услуги
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/reviews"
+                  className="block text-lg font-medium hover:text-orange-500 transition-colors"
+                >
+                  Отзывы
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/articles"
+                  className="block text-lg font-medium hover:text-orange-500 transition-colors"
+                >
+                  Статьи
+                </Link>
+              </li>
+            </ul>
+            <div className="mt-8">
+              <Link href="/form">
+                <CustomButton type="button" className="w-full">
+                  {t('discussProject')}
+                </CustomButton>
               </Link>
-            </li>
-            <li>
-              <Link href="/portfolio" className="hover:text-black flex w-full">
-                Портфолио
-              </Link>
-            </li>
-            <li>
-              <Link href="/cases" className="flex items-center gap-1 hover:text-black flex w-full">
-                Услуги ▼
-              </Link>
-            </li>
-            <li>
-              <Link href="/reviews" className="hover:text-black flex w-full">
-                Отзывы
-              </Link>
-            </li>
-            <li>
-              <Link href="/articles" className="hover:text-black flex w-full">
-                Статьи
-              </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
         </nav>
       )}
     </>
