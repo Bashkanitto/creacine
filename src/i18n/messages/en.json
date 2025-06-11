@@ -18,14 +18,15 @@
     "production": "Production",
     "creative_task": "Creative task"
   },
-  "header": {
+
+
+   "header": {
     "discussProject": "Discuss project",
     "about":"About",
     "portfolio":"Portfolio",
     "services":"Services",
     "reviews":"Reviews",
     "articles":"Articles"
-    
   },
   "footer": {
     "dvasoroksemGroupAllRightsReserveded": "DVASOROKSEM GROUP - ALL RIGHTS RESERVED",
@@ -171,5 +172,6 @@
     "any": "SEO",
     "collections": "Branding",
     "tiktok": "TikTok"
+
   }
 }

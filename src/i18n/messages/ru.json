@@ -20,11 +20,12 @@
   },
   "header": {
     "discussProject": "Обсудить проект",
-    "about": "О нас",
-    "portfolio": "Портфолио",
-    "services": "Услуги",
-    "reviews": "Отзывы",
-    "articles": "Статьи"
+      "about":"О нас",
+    "portfolio":"Портфолио",
+    "services":"Услуги",
+    "reviews":"Отзывы",
+    "articles":"Статьи"
+  
   },
   "footer": {
     "dvasoroksemGroupAllRightsReserveded": "ГРУППА DVASOROKSEM - ВСЕ ПРАВА ЗАЩИЩЕНЫ",
@@ -172,4 +173,5 @@
       "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
       "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
       }
+
 }
