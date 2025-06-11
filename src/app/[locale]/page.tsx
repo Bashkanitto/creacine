@@ -31,14 +31,13 @@ export default function HomePage() {
       <section className="team w-[86%] mx-auto mt-[200px] flex gap-[50px]">
         <img src="/images/team.png" alt="our team" />
         <div>
-          <p style={{ color: colors.text }}>МАРКЕТИНГ, КОТОРЫЙ РАБОТАЕТ</p>
-          <h2>Мы - двасороксемь.</h2>
+          <p style={{ color: colors.text }}>{t('marketingWitchworks')}</p>
+          <h2>{t('weTwo')}</h2>
           <p className="text-[30px]" style={{ color: colors.text }}>
-            Ведущее маркетинговое агентство Центральной Азии. Помогаем брендам масштабироваться
-            через стратегию, digital, SEO, SMM и брендинг.
+            {t('leadMarketing')}
           </p>
           <button className="w-[321px] border rounded-full mt-[172px] px-4 py-2 flex justify-center">
-            Посмотреть в цифрах <ArrowRight />
+            {t('lookNumbers')} <ArrowRight />
           </button>
         </div>
       </section>
