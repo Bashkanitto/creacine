@@ -6,8 +6,17 @@
   "howWeHelpBusinesses":"How we help businesses grow",
   "seeAllCases":"See all cases",
   "FeedBackForm": {
-    "ReadyToDiscuss": "Ready to discuss your project?",
-    "downloadBrif": "Download brif"
+  "ReadyToDiscuss": "Ready to discuss your project?",
+  "downloadBrif": "Download brif",
+  "sendMessage": "Send message",
+  "attachFile": "Attach file",
+  "name": "Name",
+  "telegramOrEmail": "Telegram or Email",
+  "describeProjectOrTask": "Describe your project or task",
+  "comprehensive": "Comprehensive",
+    "instagram": "Instagram",
+    "production": "Production",
+    "creative_task": "Creative task"
   },
    "header": {
     "discussProject": "Discuss project",
@@ -16,6 +25,7 @@
     "services":"Services",
     "reviews":"Reviews",
     "articles":"Articles"
+    
   },
    "footer":{
     "dvasoroksemGroupAllRightsReserveded":"DVASOROKSEM GROUP - ALL RIGHTS RESERVED",
@@ -105,6 +115,24 @@
   "content_text": "Creative that engages and sells",
   "what_we_do": "WHAT WE DO",
   "our_services": "Our services"
+  },
+  "cases":{
+  "case_content_brand_values": "Created content that conveys brand values and highlights expertise",
+  "case_unique_brand_design": "Developed unique brand design: from boxes to booklets",
+  "case_contests_engagement": "Organized contests and giveaways that engaged the audience",
+  "case_targeting_key_visual": "Launched targeted ads with a powerful key visual",
+  "case": "CASE",
+  "splat_description": "SPLAT is a brand that produces health products, body care items, oral hygiene solutions, home care products, and cosmetics.",
+  "splat":"SPLAT",
+  "microblogger_posts": "Microblogger posts",
+  "subscribers": "Subscribers",
+  "account_engagement_increase": "Increase in account engagement by",
+  "client_task_question": "What task did the client come to us with?",
+  "splat_goal": "SPLAT didn’t just want to make a statement — the goal was to firmly establish its presence in Kazakhstan",
+  "increase_market_awareness": "Increase market awareness",
+  "build_active_community": "Build an active community around the brand",
+  "develop_smm_identity": "Develop SMM identity that speaks the same language as the audience",
+  "launched_pr_campaign": "Launched a large-scale PR campaign with micro and macro influencers"
   }
 
 }

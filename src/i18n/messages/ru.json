@@ -11,7 +11,12 @@
     "sendMessage": "Отправить сообщение",
     "attachFile": "Прикрепить файл",
     "name": "Имя",
-    "telegramOrEmail": "Телеграм или Email"
+    "telegramOrEmail": "Телеграм или Email",
+    "describeProjectOrTask": "Опишите свой проект или задачу",
+    "comprehensive": "Комплексный",
+    "instagram": "instagram",
+    "production": "Production",
+    "creative_task": "Креативная задача"
   },
   "header": {
     "discussProject": "Обсудить проект",
@@ -110,5 +115,24 @@
   "content_text": "Креатив, который вовлекает и продает",
   "what_we_do": "ЧТО МЫ УМЕЕМ",
   "our_services": "Наши услуги"
+  },
+  "cases":{
+  "case_content_brand_values": "Создали контент, который передает ценности бренда и подчеркивает экспертность",
+  "case_unique_brand_design": "Разработали уникальный бренд-дизайн: от боксов до книжек",
+  "case_contests_engagement": "Организовали конкурсы и розыгрыши, которые вовлекли аудиторию",
+  "case_targeting_key_visual": "Запустили таргет с мощным key visual",
+  "case": "КЕЙС",
+  "splat_description": "SPLAT — бренд, производящий средства для здоровья, ухода за телом, средства для гигиены полости рта, продукты для ухода за домом, а также косметику.",
+  "splat":"SPLAT",
+  "microblogger_posts": "Публикации микроблогеров",
+  "subscribers": "Подписчиков",
+  "account_engagement_increase": "Увеличение вовлеченности аккаунта на",
+  "client_task_question": "С какой задачей к нам пришли?",
+  "splat_goal": "SPLAT хотел не просто заявить о себе, а прочно занять место в Казахстане",
+  "increase_market_awareness": "Увеличить узнаваемость на рынке",
+  "build_active_community": "Собрать активное комьюнити вокруг бренда",
+  "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
+  "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
+
   }
 }

@@ -12,10 +12,10 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   const t = useTranslations('FeedBackForm')
 
   const aims = [
-    { label: 'Комплексный' },
+    { label: 'comprehensive' },
     { label: 'instagram' },
-    { label: 'Production' },
-    { label: 'Креативная задача' },
+    { label: 'production' },
+    { label: 'creative_task' },
   ]
 
   return (
@@ -57,7 +57,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
                 }}
                 className="py-2 rounded-full w-full text-1xl font-bold"
               >
-                {aim.label}
+                {t(aim.label)}
               </button>
             ))}
           </div>
@@ -69,7 +69,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
               padding: '18px',
               borderRadius: '14px',
             }}
-            placeholder="Опишите свой проект или задачу"
+            placeholder={t('describeProjectOrTask')}
             className="w-full mt-[35px] rounded-2xl"
           />
 
