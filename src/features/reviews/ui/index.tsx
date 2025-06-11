@@ -1,23 +1,23 @@
 import { colors } from '@/constants/colors'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function ReviewsComponent() {
+  const t = useTranslations('reviews')
   const reviews = [
     {
       id: 0,
       image: '/images/review1.png',
-      comment:
-        '"Сотрудничество с двасороксемь - это про стратегию, вовлеченность и маркетинг, который работает"',
-      name: 'Дидар Шаухаров',
-      role: 'Qazaqstan catecing solutions',
+      comment: 'reviewComment1',
+      name: 'reviewName1',
+      role: 'reviewRole1',
     },
     {
       id: 1,
       image: '/images/review2.png',
-      comment:
-        '"Сотрудничество с двасороксемь - это про стратегию, вовлеченность и маркетинг, который работает"',
-      name: 'Дидар Шаухаров',
-      role: 'Qazaqstan catecing solutions',
+      comment: 'reviewComment2',
+      name: 'reviewName2',
+      role: 'reviewRole2',
     },
   ]
   const videos = [
@@ -38,9 +38,9 @@ export default function ReviewsComponent() {
   return (
     <>
       <p className="text-center" style={{ color: colors.text }}>
-        КЛИЕНТЫ О НАС
+        {t('klients')}
       </p>
-      <h2 className="text-center mt-[20px] w-[60%] mx-auto">Реальные кейсы, реальные результаты</h2>
+      <h2 className="text-center mt-[20px] w-[60%] mx-auto">{t('realCases')}</h2>
       <div className="flex gap-[30px] overflow-x-scroll mt-[50px]">
         {reviews.map((review) => (
           <div
@@ -48,7 +48,7 @@ export default function ReviewsComponent() {
             key={review.id}
             className="flex flex-col gap-[25px] items-center p-[50px] rounded-[30px]"
           >
-            <p className="text-center w-[80%]">{review.comment}</p>
+            <p className="text-center w-[80%]">{t(review.comment)}</p>
             <Image width={75} height={75} src={review.image} alt="author avatar" />
             <h3>{review.name}</h3>
             <p style={{ color: colors.text }}>{review.role}</p>

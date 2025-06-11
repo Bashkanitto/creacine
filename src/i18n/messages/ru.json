@@ -1,10 +1,10 @@
 {
   "title": "титл",
   "hello": "Привет!",
-  "ourServices":"Наши услуги",
-  "provenByResults":"ПРОВЕРЕНО РЕЗУЛЬТАТАМИ",
-  "howWeHelpBusinesses":"Как мы помогаем бизнесу расти",
-  "seeAllCases":"Смотреть все кейсы",
+  "ourServices": "Наши услуги",
+  "provenByResults": "ПРОВЕРЕНО РЕЗУЛЬТАТАМИ",
+  "howWeHelpBusinesses": "Как мы помогаем бизнесу расти",
+  "seeAllCases": "Смотреть все кейсы",
   "FeedBackForm": {
     "ReadyToDiscuss": "Готовы обсудить ваш проект?",
     "downloadBrif": "Скачать бриф",
@@ -20,31 +20,29 @@
   },
   "header": {
     "discussProject": "Обсудить проект",
-    "about":"О нас",
-    "portfolio":"Портфолио",
-    "services":"Услуги",
-    "reviews":"Отзывы",
-    "articles":"Статьи"
+    "about": "О нас",
+    "portfolio": "Портфолио",
+    "services": "Услуги",
+    "reviews": "Отзывы",
+    "articles": "Статьи"
   },
-  "footer":{
-    "dvasoroksemGroupAllRightsReserveded":"ГРУППА DVASOROKSEM - ВСЕ ПРАВА ЗАЩИЩЕНЫ",
-    "address":"ул. Калибек Куанышбаев, 11Б, Астана, Казахстан"
+  "footer": {
+    "dvasoroksemGroupAllRightsReserveded": "ГРУППА DVASOROKSEM - ВСЕ ПРАВА ЗАЩИЩЕНЫ",
+    "address": "ул. Калибек Куанышбаев, 11Б, Астана, Казахстан"
   },
-   "services":{
-    "integratedMarketing":"Комплексный маркетинг",
-    "fullCycleSolutionsForGrowth":"Полный цикл решений для роста",
-    "marketingStrategies":"Маркетинговые стратегии",
-    "planForBusiness":"Четкий план действий для бизнеса",
-    "managingContenten":"Управляем контентом, вовлекаем аудиторию",
-    "videoPhotoCreative":"Видео, фото, креатив для брендов",
-    "turnkeyPromotion":"Продвижение и тренды под ключ",
-    "branding":"Брендинг",
-    "weShapetheImage":"Формируем облик и ценности компании",
-    "moreDetails":"Подробнее"
-   
-
+  "services": {
+    "integratedMarketing": "Комплексный маркетинг",
+    "fullCycleSolutionsForGrowth": "Полный цикл решений для роста",
+    "marketingStrategies": "Маркетинговые стратегии",
+    "planForBusiness": "Четкий план действий для бизнеса",
+    "managingContenten": "Управляем контентом, вовлекаем аудиторию",
+    "videoPhotoCreative": "Видео, фото, креатив для брендов",
+    "turnkeyPromotion": "Продвижение и тренды под ключ",
+    "branding": "Брендинг",
+    "weShapetheImage": "Формируем облик и ценности компании",
+    "moreDetails": "Подробнее"
   },
-   "about": {
+  "about": {
     "marketingStrategies": "Маркетинговые стратегии",
     "nicheAnalysis": "Анализ ниши и аудит конкурентов",
     "brandStrategy": "Позиционирование и стратегия бренда",
@@ -74,28 +72,29 @@
     "accountDevelopment": "Создание и развитие аккаунта",
     "analytic": "Аналитика и оптимизация контента",
 
-    "ai":"ИИ",
+    "ai": "ИИ",
     "ai_integration": "Внедрение AI в маркетинг и бизнес-процессы",
-  "content_generation": "Генерация контента и автоматизация SMM",
-  "personalized_recommendations": "Персонализированные рекомендации",
-  "big_data_analysis": "Анализ больших данных и предсказательная аналитика",
-  "chatbot_development": "Разработка чат-ботов с ИИ",
-  "ad_campaign_automation": "Автоматизация рекламных кампаний",
+    "content_generation": "Генерация контента и автоматизация SMM",
+    "personalized_recommendations": "Персонализированные рекомендации",
+    "big_data_analysis": "Анализ больших данных и предсказательная аналитика",
+    "chatbot_development": "Разработка чат-ботов с ИИ",
+    "ad_campaign_automation": "Автоматизация рекламных кампаний",
 
-   "web_development": "Разработка и поддержка веб-сайтов",
-  "ux_ui_design": "UX/UI-дизайн и цифровые продукты",
-  "crm_automation": "CRM и автоматизация процессов",
-  "chatbots_voice_assistants": "Чат-боты и голосовые помощники",
-  "mobile_app_development": "Разработка мобильных приложений",
-  "data_analytics_reporting": "Аналитика данных и сквозная отчетность",
+    "web_development": "Разработка и поддержка веб-сайтов",
+    "ux_ui_design": "UX/UI-дизайн и цифровые продукты",
+    "crm_automation": "CRM и автоматизация процессов",
+    "chatbots_voice_assistants": "Чат-боты и голосовые помощники",
+    "mobile_app_development": "Разработка мобильных приложений",
+    "data_analytics_reporting": "Аналитика данных и сквозная отчетность",
 
-  "branding":"Брендинг",
-  "brand_positioning": "Разработка позиционирования",
-  "naming_slogan": "Нейминг и слоган",
-  "logo_identity": "Логотип и фирменный стиль",
-  "guideline_brandbook": "Гайдлайн и брендбук",
-  "digital_offline_assets": "Оформление digital и офлайн-носителей",
-  "tone_of_voice": "Создание визуального и вербального tone of voice",
+    "branding": "Брендинг",
+    "brand_positioning": "Разработка позиционирования",
+    "naming_slogan": "Нейминг и слоган",
+    "logo_identity": "Логотип и фирменный стиль",
+    "guideline_brandbook": "Гайдлайн и брендбук",
+    "digital_offline_assets": "Оформление digital и офлайн-носителей",
+    "tone_of_voice": "Создание визуального и вербального tone of voice",
+ 
 
   "comprehensive_marketing": "Комплексный маркетинг",
   "instagram": "Instagram",
@@ -116,23 +115,61 @@
   "what_we_do": "ЧТО МЫ УМЕЕМ",
   "our_services": "Наши услуги"
   },
+ "portfolio": {
+    "branding": "Комплексный",
+    "marketing": "Стратегии",
+    "trands": "UX/UI дизайн",
+    "userful": "Instagram",
+    "psychology": "Production",
+    "strategy": "SMM",
+    "any": "SEO",
+    "collections": "Брендинг",
+    "tiktok": "TikTok"
+  },
+   "category": {
+    "branding": "Брендинг",
+    "marketing": "Маркетинг",
+    "trands": "Тренды",
+    "userful": "Полезное",
+    "psychology": "Психология",
+    "strategy": "Стратегия",
+    "any": "Все",
+    "collections": "Подборки",
+    "title": "Наши статьи",
+    "subtitle": "ЭКСПЕРТИЗА И ТРЕНДЫ",
+    "articleMessage1": "Почему маскоты являются мощным инструментом дизайна",
+    "articleMessage2": "Полезные ресурсы для дизайнеров"
+  },
+   "reviews": {
+    "klients": "Наши клиенты",
+    "realCases": "Реальные кейсы и честные отзывы",
+    "reviewComment1": "Сотрудничество с двасороксемь — это про стратегию, вовлечённость и маркетинг, который работает",
+    "reviewName1": "Дидар Шаухаров",
+    "reviewRole1": "Qazaqstan catering solutions",
+    "reviewComment2": "«Команда двасороксемь глубоко понимает бизнес и предлагает решения, которые дают эффект»",
+    "reviewName2": "Gleb Glukhovichev",
+    "reviewRole2": "Bauer Hockey Kazakhstan"
+  },
+  "marketingWitchworks": "МАРКЕТИНГ, КОТОРЫЙ РАБОТАЕТ",
+  "weTwo": "Мы - двасороксемь.",
+  "leadMarketing": "Ведущее маркетинговое агентство Центральной Азии. Помогаем брендам масштабироваться через стратегию, digital, SEO, SMM и брендинг.",
+  "lookNumbers": "Посмотреть в цифрах",
   "cases":{
-  "case_content_brand_values": "Создали контент, который передает ценности бренда и подчеркивает экспертность",
-  "case_unique_brand_design": "Разработали уникальный бренд-дизайн: от боксов до книжек",
-  "case_contests_engagement": "Организовали конкурсы и розыгрыши, которые вовлекли аудиторию",
-  "case_targeting_key_visual": "Запустили таргет с мощным key visual",
-  "case": "КЕЙС",
-  "splat_description": "SPLAT — бренд, производящий средства для здоровья, ухода за телом, средства для гигиены полости рта, продукты для ухода за домом, а также косметику.",
-  "splat":"SPLAT",
-  "microblogger_posts": "Публикации микроблогеров",
-  "subscribers": "Подписчиков",
-  "account_engagement_increase": "Увеличение вовлеченности аккаунта на",
-  "client_task_question": "С какой задачей к нам пришли?",
-  "splat_goal": "SPLAT хотел не просто заявить о себе, а прочно занять место в Казахстане",
-  "increase_market_awareness": "Увеличить узнаваемость на рынке",
-  "build_active_community": "Собрать активное комьюнити вокруг бренда",
-  "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
-  "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
-
-  }
+      "case_content_brand_values": "Создали контент, который передает ценности бренда и подчеркивает экспертность",
+      "case_unique_brand_design": "Разработали уникальный бренд-дизайн: от боксов до книжек",
+      "case_contests_engagement": "Организовали конкурсы и розыгрыши, которые вовлекли аудиторию",
+      "case_targeting_key_visual": "Запустили таргет с мощным key visual",
+      "case": "КЕЙС",
+      "splat_description": "SPLAT — бренд, производящий средства для здоровья, ухода за телом, средства для гигиены полости рта, продукты для ухода за домом, а также косметику.",
+      "splat":"SPLAT",
+      "microblogger_posts": "Публикации микроблогеров",
+      "subscribers": "Подписчиков",
+      "account_engagement_increase": "Увеличение вовлеченности аккаунта на",
+      "client_task_question": "С какой задачей к нам пришли?",
+      "splat_goal": "SPLAT хотел не просто заявить о себе, а прочно занять место в Казахстане",
+      "increase_market_awareness": "Увеличить узнаваемость на рынке",
+      "build_active_community": "Собрать активное комьюнити вокруг бренда",
+      "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
+      "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
+      }
 }
