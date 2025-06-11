@@ -8,4 +8,5 @@ export const colors = {
   background: '#f5f5f5', // Light Grey
   text: '#9E9E9E', // Dark Grey
   border: '#9E9E9E', // Dark Grey,
+  black: '#2A2A2A',
 }
