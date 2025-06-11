@@ -38,7 +38,7 @@ export default function ReviewsComponent() {
   return (
     <>
       <p className="text-center" style={{ color: colors.text }}>
-        {t('klients')}
+        {t('clients')}
       </p>
       <h2 className="text-center mt-[20px] w-[60%] mx-auto">{t('realCases')}</h2>
       <div className="flex flex-col lg:flex-row gap-[30px] overflow-x-scroll mt-[50px]">

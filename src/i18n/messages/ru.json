@@ -20,12 +20,11 @@
   },
   "header": {
     "discussProject": "Обсудить проект",
-      "about":"О нас",
-    "portfolio":"Портфолио",
-    "services":"Услуги",
-    "reviews":"Отзывы",
-    "articles":"Статьи"
-  
+    "about": "О нас",
+    "portfolio": "Портфолио",
+    "services": "Услуги",
+    "reviews": "Отзывы",
+    "articles": "Статьи"
   },
   "footer": {
     "dvasoroksemGroupAllRightsReserveded": "ГРУППА DVASOROKSEM - ВСЕ ПРАВА ЗАЩИЩЕНЫ",
@@ -95,7 +94,6 @@
     "guideline_brandbook": "Гайдлайн и брендбук",
     "digital_offline_assets": "Оформление digital и офлайн-носителей",
     "tone_of_voice": "Создание визуального и вербального tone of voice",
- 
 
     "comprehensive_marketing": "Комплексный маркетинг",
     "instagram": "Instagram",
@@ -105,7 +103,7 @@
     "chat_bot": "Чат бот",
     "pr_bloggers": "PR - работа с блогерами",
     "info_platforms": "Работа с информационными платформами",
-    
+
     "we_create_marketing": "Мы создаем маркетинг, который работает",
     "strategy_title": "Стратегия",
     "strategy_text": "Долгосрочные решения для сильного бренда",
@@ -116,7 +114,7 @@
     "what_we_do": "ЧТО МЫ УМЕЕМ",
     "our_services": "Наши услуги"
   },
- "portfolio": {
+  "portfolio": {
     "branding": "Комплексный",
     "marketing": "Стратегии",
     "trands": "UX/UI дизайн",
@@ -127,7 +125,7 @@
     "collections": "Брендинг",
     "tiktok": "TikTok"
   },
-   "category": {
+  "category": {
     "branding": "Брендинг",
     "marketing": "Маркетинг",
     "trands": "Тренды",
@@ -141,8 +139,8 @@
     "articleMessage1": "Почему маскоты являются мощным инструментом дизайна",
     "articleMessage2": "Полезные ресурсы для дизайнеров"
   },
-   "reviews": {
-    "klients": "Наши клиенты",
+  "reviews": {
+    "clients": "Наши клиенты",
     "realCases": "Реальные кейсы и честные отзывы",
     "reviewComment1": "Сотрудничество с двасороксемь — это про стратегию, вовлечённость и маркетинг, который работает",
     "reviewName1": "Дидар Шаухаров",
@@ -155,23 +153,22 @@
   "weTwo": "Мы - двасороксемь.",
   "leadMarketing": "Ведущее маркетинговое агентство Центральной Азии. Помогаем брендам масштабироваться через стратегию, digital, SEO, SMM и брендинг.",
   "lookNumbers": "Посмотреть в цифрах",
-  "cases":{
-      "case_content_brand_values": "Создали контент, который передает ценности бренда и подчеркивает экспертность",
-      "case_unique_brand_design": "Разработали уникальный бренд-дизайн: от боксов до книжек",
-      "case_contests_engagement": "Организовали конкурсы и розыгрыши, которые вовлекли аудиторию",
-      "case_targeting_key_visual": "Запустили таргет с мощным key visual",
-      "case": "КЕЙС",
-      "splat_description": "SPLAT — бренд, производящий средства для здоровья, ухода за телом, средства для гигиены полости рта, продукты для ухода за домом, а также косметику.",
-      "splat":"SPLAT",
-      "microblogger_posts": "Публикации микроблогеров",
-      "subscribers": "Подписчиков",
-      "account_engagement_increase": "Увеличение вовлеченности аккаунта на",
-      "client_task_question": "С какой задачей к нам пришли?",
-      "splat_goal": "SPLAT хотел не просто заявить о себе, а прочно занять место в Казахстане",
-      "increase_market_awareness": "Увеличить узнаваемость на рынке",
-      "build_active_community": "Собрать активное комьюнити вокруг бренда",
-      "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
-      "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
-      }
-
+  "cases": {
+    "case_content_brand_values": "Создали контент, который передает ценности бренда и подчеркивает экспертность",
+    "case_unique_brand_design": "Разработали уникальный бренд-дизайн: от боксов до книжек",
+    "case_contests_engagement": "Организовали конкурсы и розыгрыши, которые вовлекли аудиторию",
+    "case_targeting_key_visual": "Запустили таргет с мощным key visual",
+    "case": "КЕЙС",
+    "splat_description": "SPLAT — бренд, производящий средства для здоровья, ухода за телом, средства для гигиены полости рта, продукты для ухода за домом, а также косметику.",
+    "splat": "SPLAT",
+    "microblogger_posts": "Публикации микроблогеров",
+    "subscribers": "Подписчиков",
+    "account_engagement_increase": "Увеличение вовлеченности аккаунта на",
+    "client_task_question": "С какой задачей к нам пришли?",
+    "splat_goal": "SPLAT хотел не просто заявить о себе, а прочно занять место в Казахстане",
+    "increase_market_awareness": "Увеличить узнаваемость на рынке",
+    "build_active_community": "Собрать активное комьюнити вокруг бренда",
+    "develop_smm_identity": "Разработать SMM-айдентику, которая говорит с аудиторией на одном языке",
+    "launched_pr_campaign": "Запустили масштабную PR-кампанию с микро- и макроблогерами"
+  }
 }
