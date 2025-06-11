@@ -11,69 +11,69 @@ export default function AboutPage() {
   const t = useTranslations('about')
   const aboutSteps = [
     {
-      h3: t('marketingStrategies'),
+      h3: 'marketingStrategies',
       list: [
-        t('nicheAnalysis'),
-        t('brandStrategy'),
-        t('toneOfVoice'),
-        t('contentStrategy'),
-        t('mediaStrategy'),
-        t('growthPlan'),
+        'nicheAnalysis',
+        'brandStrategy',
+        'toneOfVoice',
+        'contentStrategy',
+        'mediaStrategy',
+        'growthPlan',
       ],
     },
     {
       h3: 'SMM',
       list: [
-        t('contentPlan'),
-        t('platforms'),
-        t('communityEngagement'),
-        t('adsLaunch'),
-        t('influencerMarketing'),
-        t('analytics'),
+        'contentPlan',
+        'platforms',
+        'communityEngagement',
+        'adsLaunch',
+        'influencerMarketing',
+        'analytics',
       ],
     },
     {
       h3: 'Production',
       list: [
-        t('brandedContent'),
-        t('adAndImageVideos'),
-        t('creativeConcepts'),
-        t('motionDesign'),
-        t('socialAndDigitalContent'),
-        t('postProduction'),
+        'brandedContent',
+        'adAndImageVideos',
+        'creativeConcepts',
+        'motionDesign',
+        'socialAndDigitalContent',
+        'postProduction',
       ],
     },
     {
       h3: 'TikTok',
       list: [
-        t('contentStrateg'),
-        t('trendyContent'),
-        t('bloggersAndChallenges'),
-        t('tiktokAds'),
-        t('accountDevelopment'),
-        t('analytic'),
+        'contentStrateg',
+        'trendyContent',
+        'bloggersAndChallenges',
+        'tiktokAds',
+        'accountDevelopment',
+        'analytic',
       ],
     },
     {
-      h3: t('ai'),
+      h3: 'ai',
       list: [
-        t('ai_integration'),
-        t('content_generation'),
-        t('personalized_recommendations'),
-        t('big_data_analysis'),
-        t('chatbot_development'),
-        t('ad_campaign_automation'),
+        'ai_integration',
+        'content_generation',
+        'personalized_recommendations',
+        'big_data_analysis',
+        'chatbot_development',
+        'ad_campaign_automation',
       ],
     },
     {
       h3: 'IT',
       list: [
-        t('web_development'),
-        t('ux_ui_design'),
-        t('crm_automation'),
-        t('chatbots_voice_assistants'),
-        t('mobile_app_development'),
-        t('data_analytics_reporting'),
+        'web_development',
+        'ux_ui_design',
+        'crm_automation',
+        'chatbots_voice_assistants',
+        'mobile_app_development',
+        'data_analytics_reporting',
       ],
     },
   ]
@@ -136,11 +136,11 @@ export default function AboutPage() {
                 style={{ background: colors.background }}
                 className="p-[35px] rounded-[35px]"
               >
-                <h3>{step.h3}</h3>
+                <h3>{t(step.h3)}</h3>
                 <ul className="mt-2 list-disc">
                   {step.list.map((listItem, index) => (
                     <li className="ml-6" key={index}>
-                      {listItem}
+                      {t(listItem)}
                     </li>
                   ))}
                 </ul>

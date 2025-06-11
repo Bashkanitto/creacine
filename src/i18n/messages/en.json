@@ -85,8 +85,8 @@
     "crm_automation": "CRM and process automation",
     "chatbots_voice_assistants": "Chatbots and voice assistants",
     "mobile_app_development": "Mobile application development",
-    "data_analytics_reporting": "Data analytics and end-to-end reporting"
-  },
+    "data_analytics_reporting": "Data analytics and end-to-end reporting",
+  
   "branding": "Branding",
   "brand_positioning": "Brand positioning development",
   "naming_slogan": "Naming and slogan",
@@ -112,7 +112,7 @@
   "content_title": "Content",
   "content_text": "Creative that engages and sells",
   "what_we_do": "WHAT WE DO",
-  "our_services": "Our services",
+  "our_services": "Our services"},
   "cases":{
   "case_content_brand_values": "Created content that conveys brand values and highlights expertise",
   "case_unique_brand_design": "Developed unique brand design: from boxes to booklets",
