@@ -54,7 +54,7 @@ function ServicesSection() {
   ]
 
   return (
-    <div className="grid grid-cols-3 gap-[30px] mt-[45px]">
+    <div className="grid lg:grid-cols-3 gap-[30px] mt-[45px]">
       {services.map((service) => (
         <div
           className="rounded-[30px] flex flex-col justify-center items-center py-[35px] border border-neutral-300"

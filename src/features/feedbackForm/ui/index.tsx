@@ -19,33 +19,38 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   ]
 
   return (
-    <section
-      style={{
-        background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')",
-        backgroundRepeat: 'no-repeat',
-      }}
-      className="w-full h-[752px]"
-    >
-      <div className="flex w-[88%] mx-auto">
-        <div className="w-[80%] rounded-r-4xl mt-[100px]">
-          <h1 className="text-[58px] w-[70%] text-white">{t('ReadyToDiscuss')}</h1>
-          <Link href="#" className="mt-2 underline flex gap-2 text-white">
+    <section className="w-full h-[752px] mt-[30px] lg:mt-0">
+      <div className="flex flex-col items-center lg:items-start lg:flex-row h-full">
+        <div
+          style={{
+            background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')",
+            backgroundRepeat: 'no-repeat',
+          }}
+          className="w-[90%] lg:w-[80%] h-[224px] lg:h-full rounded-4xl lg:rounded-l-[0px] lg:rounded-r-4xl p-[30px] lg:p-[100px]"
+        >
+          <h1 className="text-[42px] lg:text-[58px] w-full lg:w-[70%]  text-white text-center lg:text-start">
+            {t('ReadyToDiscuss')}
+          </h1>
+          <Link
+            href="#"
+            className="mt-2 underline flex gap-2 text-white justify-center lg:justify-start"
+          >
             <LinkIcon />
             {t('downloadBrif')}
           </Link>
         </div>
 
-        <form className="w-full">
-          <div className="flex mt-[100px] gap-[30px] justify-between">
+        <form className="w-full px-4 py-4">
+          <div className="flex flex-col lg:flex-row mt-[30px] lg:mt-[100px] gap-4 lg:gap-[30px] justify-between">
             <CustomInput type="text" placeholder={t('name')} />
             <CustomInput type="text" placeholder="+7" />
           </div>
           <CustomInput
-            className="w-full mt-[35px]"
+            className="w-full mt-4 lg:mt-[35px]"
             type="text"
             placeholder={t('telegramOrEmail')}
           />
-          <div className="mt-[35px] flex gap-1 justify-between">
+          <div className="mt-4 lg:mt-[35px] flex gap-1 justify-between">
             {aims.map((aim, idx) => (
               <button
                 key={aim.label}
@@ -55,7 +60,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
                   background: selectedAim === idx ? colors.primary : colors.secondary,
                   color: selectedAim === idx ? 'white' : colors.text,
                 }}
-                className="py-2 rounded-full w-full text-1xl font-bold"
+                className="py-0 lg:py-2 rounded-full w-full text-1xl font-bold"
               >
                 {t(aim.label)}
               </button>
@@ -70,15 +75,19 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
               borderRadius: '14px',
             }}
             placeholder={t('describeProjectOrTask')}
-            className="w-full mt-[35px] rounded-2xl"
+            className="w-full mt-4 lg:mt-[35px] rounded-2xl"
           />
 
-          <label style={{ color: colors.text }} className="flex gap-1 mt-[35px]" htmlFor="file">
+          <label
+            style={{ color: colors.text }}
+            className="flex gap-1 mt-4 lg:mt-[35px]"
+            htmlFor="file"
+          >
             <Paperclip />
             {t('attachFile')}
           </label>
           <input type="file" name="file" id="file" className="hidden" />
-          <CustomButton type="button" className="w-full mt-[35px]">
+          <CustomButton type="button" className="w-full mt-4 lg:mt-[35px]">
             {t('sendMessage')}
           </CustomButton>
         </form>

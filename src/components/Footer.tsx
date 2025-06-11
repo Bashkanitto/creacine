@@ -7,8 +7,8 @@ const Footer = () => {
   const t = useTranslations('footer')
 
   return (
-    <footer className="bg-black h-[412px] w-full text-white">
-      <div className="flex gap-[50px] pt-[100px] px-[100px]">
+    <footer className="bg-black h-full lg:h-[412px] w-full text-white">
+      <div className="flex flex-col lg:flex-row gap-[50px] lg:pt-[100px] p-4 lg:px-[100px]">
         <div className="w-full">
           <h2>2.47</h2>
           <p className="flex gap-2 items-center text-[30px]">
@@ -32,8 +32,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="mt-[60px] w-[87%] mx-auto text-neutral-700" />
-      <p className="flex justify-center mt-[30px]">{t('dvasoroksemGroupAllRightsReserveded')}</p>
+      <hr className="mt-4 lg:mt-[60px] w-[87%] mx-auto text-neutral-700" />
+      <p className="flex justify-center mt-[30px] pb-6 ">
+        {t('dvasoroksemGroupAllRightsReserveded')}
+      </p>
     </footer>
   )
 }
