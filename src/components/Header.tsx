@@ -27,8 +27,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/services" className="flex items-center gap-1 hover:text-black">
-              {t('services')} ▼
+            <Link href="/cases" className="flex items-center gap-1 hover:text-black">
+              Услуги ▼
             </Link>
           </li>
           <li>
