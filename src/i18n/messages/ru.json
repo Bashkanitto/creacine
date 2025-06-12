@@ -82,6 +82,10 @@
     "chatbot_development": "Разработка чат-ботов с ИИ",
     "ad_campaign_automation": "Автоматизация рекламных кампаний",
 
+    "IT": "IT",
+    "SMM": "SMM",
+    "Production": "Продакшн",
+    "TikTok": "ТикТок",
     "web_development": "Разработка и поддержка веб-сайтов",
     "ux_ui_design": "UX/UI-дизайн и цифровые продукты",
     "crm_automation": "CRM и автоматизация процессов",
@@ -112,6 +116,7 @@
     "promotion_title": "Продвижение",
     "promotion_text": "Digital, SMM, реклама и PR",
     "content_title": "Контент",
+    "what_we_do": "ЧТО МЫ УМЕЕМ",
     "content_text": "Креатив, который вовлекает и продает",
     "our_services": "Наши услуги"
   },
