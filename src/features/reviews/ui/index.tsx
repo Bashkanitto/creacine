@@ -40,7 +40,7 @@ export default function ReviewsComponent() {
       <p className="text-center" style={{ color: colors.text }}>
         {t('clients')}
       </p>
-      <h2 className="text-center mt-[20px] w-[80%] lg:w-[60%] mx-auto">{t('realCases')}</h2>
+      <h2 className="text-center mt-[20px] w-[100%] lg:w-[60%] mx-auto">{t('realCases')}</h2>
       <div className="flex flex-col lg:flex-row gap-[30px] overflow-x-scroll mt-[50px]">
         {reviews.map((review) => (
           <div
