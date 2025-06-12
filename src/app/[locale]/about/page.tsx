@@ -1,8 +1,8 @@
-'use client'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { colors } from '@/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
+import { ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -78,11 +78,11 @@ export default function AboutPage() {
     },
   ]
   return (
-    <div className="w-[1440px] mx-auto">
+    <div className="max-w-[100vw] lg:w-[1440px] mx-auto px-4">
       <Header />
       <section className="pt-[200px] w-[88%] mx-auto">
-        <h2 className="w-2/3 text-center mx-auto">{t('we_create_marketing')}</h2>
-        <div className="flex justify-between items-center mt-[50px] text-white">
+        <h2 className="w-full lg:w-2/3 text-center mx-auto">{t('we_create_marketing')}</h2>
+        <div className="flex flex-col lg:flex-row gap-[30px] justify-between items-center mt-[50px] text-white">
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
@@ -115,10 +115,10 @@ export default function AboutPage() {
         <div className="aboutSteps mt-[50px]">
           <div
             style={{ background: colors.primary }}
-            className="flex p-[35px] gap-[50px] text-white rounded-[35px]"
+            className="flex flex-col lg:flex-row p-[35px] gap-[50px] text-white rounded-[35px]"
           >
-            <h2 className="w-full">{t('comprehensive_marketing')}</h2>
-            <ul className="w-full list-dotted text-[30px] list-disc">
+            <h3 className="w-full">{t('comprehensive_marketing')}</h3>
+            <ul className="w-full list-dotted text-[30px] list-disc ml-[30px] lg:ml-0 p-2">
               <li>{t('instagram')}</li>
               <li>{t('tiktok')}</li>
               <li>{t('seo_ads')}</li>
@@ -126,10 +126,12 @@ export default function AboutPage() {
               <li>{t('chat_bot')}</li>
               <li>{t('pr_bloggers')}</li>
               <li>{t('info_platforms')}</li>
+              <button className="rounded-full bg-white text-red-500 w-[50px] h-[50px] flex justify-center items-center float-right">
+                <ArrowUpRight />
+              </button>
             </ul>
-            <button>nav</button>
           </div>
-          <div className="grid grid-cols-2 gap-[30px] mt-[50px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-[50px]">
             {aboutSteps.map((step, index) => (
               <div
                 key={index}
@@ -163,7 +165,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="flex gap-[35px] mt-[200px]">
+        <div className="flex flex-col items-center lg:flex-row gap-[35px] mt-[50px] lg:mt-[200px]">
           <Link href="#" className="rounded-[35px]">
             <Image width={400} height={360} src="/images/about1.png" alt="marketing examples" />
           </Link>
