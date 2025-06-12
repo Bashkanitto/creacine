@@ -73,13 +73,13 @@ export default function CasesPage() {
           <div className="w-[50%] mt-[20px]">
             <h2>{t('client_task_question')}</h2>
             <p className="text-[30px] mt-[20px]" style={{ color: colors.text }}>
-              {t('splat_goal')}{' '}
-              <ul className="list-disc ml-12 mt-[20px]">
-                <li>{t('increase_market_awareness')}</li>
-                <li>{t('build_active_community')}</li>
-                <li>{t('develop_smm_identity')}</li>
-              </ul>
+              {t('splat_goal')}
             </p>
+            <ul className="list-disc ml-12 mt-[20px]">
+              <li>{t('increase_market_awareness')}</li>
+              <li>{t('build_active_community')}</li>
+              <li>{t('develop_smm_identity')}</li>
+            </ul>
           </div>
         </div>
         <div className="flex gap-[30px] mt-[100px]">
