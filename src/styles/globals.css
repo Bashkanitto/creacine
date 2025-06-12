@@ -29,7 +29,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  /* font-family: 'LooseWide', sans-serif; */
+  font-family: 'LooseWide', sans-serif;
 }
 h1,
 h2,
