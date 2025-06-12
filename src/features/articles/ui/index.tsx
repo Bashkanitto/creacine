@@ -40,7 +40,7 @@ export default function ArticlesComponent() {
       <p className="text-center" style={{ color: colors.text }}>
         {t('subtitle')}
       </p>
-      <h2 className="text-center w-[60%] mx-auto">{t('title')}</h2>
+      <h2 className="text-center w-full lg:w-[60%] mx-auto">{t('title')}</h2>
       <div className="categories mt-[20px] flex justify-between gap-[15px] overflow-x-scroll">
         {categories.map((category) => (
           <div
