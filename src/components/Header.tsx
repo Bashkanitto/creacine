@@ -12,9 +12,10 @@ const Header = () => {
   function toggleMenu() {
     setMobileMenuActive(!mobileMenuActive)
   }
+
   return (
     <>
-      <header className="fixed top-[20px] left-0 right-0 h-[61px] md:h-[104px] w-[90%] xl:w-full max-w-[1240px] mx-auto flex items-center justify-between rounded-[30px] bg-white px-[25px] shadow-lg">
+      <header className="fixed z-10 top-[20px] left-0 right-0 h-[61px] md:h-[104px] w-[90%] xl:w-full max-w-[1240px] mx-auto flex items-center justify-between rounded-[30px] bg-white px-[25px] shadow-lg">
         <Link
           href="/"
           className="flex items-center justify-center text-3xl md:text-6xl font-bold text-black lg:text-orange-500"
