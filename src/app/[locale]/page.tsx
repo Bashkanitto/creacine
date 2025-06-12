@@ -12,20 +12,20 @@ export default function HomePage() {
   const t = useTranslations()
 
   return (
-    <main className="w-full max-w-[100vw] lg:max-w-[1440px] mx-auto overflow-x-hidden min-h-screen">
+    <main className="max-w-[100vw] lg:w-[1440px] mx-auto ">
       <Header />
-      <section className="relative w-full h-[385px] lg:h-[696px]">
+      <section className="hero h-[385px] lg:h-[696px]">
         <Image
           width={1440}
           height={696}
-          className="w-full h-full object-cover"
+          className="w-[1440px] h-[385px] lg:h-[696px] absolute -z-10 md:flex"
           src="/images/hero.png"
           alt="hero images"
           priority
         />
       </section>
 
-      <section className="flex flex-col lg:flex-row gap-[30px] w-[86%] mx-auto mt-[32px] lg:mt-[100px] min-h-[600px]">
+      <section className="flex flex-col lg:flex-row gap-[30px] w-[86%] mx-auto mt-[32px] lg:mt-[100px]">
         <div>
           <p style={{ color: colors.text }} className="text-center md:text-start">
             {t('provenByResults')}
@@ -74,7 +74,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="team w-[86%] mx-auto mt-[50px] lg:mt-[200px] flex flex-col items-center lg:items-start lg:flex-row gap-[50px] min-h-[600px]">
+      <section className="team w-[86%] mx-auto mt-[50px] lg:mt-[200px] flex flex-col items-center lg:items-start lg:flex-row gap-[50px]">
         <Image
           width={358}
           height={359}
@@ -99,7 +99,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="services w-[86%] mx-auto mt-[100px] lg:mt-[200px] min-h-[600px]">
+      <section className="services w-[86%] mx-auto mt-[100px] lg:mt-[200px]">
         <p className="text-center" style={{ color: colors.text }}>
           {t('what_we_do')}
         </p>
@@ -107,13 +107,13 @@ export default function HomePage() {
         <ServicesSection />
       </section>
 
-      <section className="about w-[86%] mx-auto mt-[100px] lg:mt-[200px] min-h-[600px]">
+      <section className="about w-[86%] mx-auto mt-[100px] lg:mt-[200px]">
         <Reviews />
       </section>
 
       <section
         style={{ background: colors.background }}
-        className="certificates mt-[100px] p-4 lg:p-[100px] flex gap-[40px] min-h-[990px]"
+        className="certificates mt-[100px] p-4 lg:p-[100px] flex gap-[40px] h-full lg:h-[990px]"
       >
         <div className="hidden lg:block">
           <div className="columns-2 gap-[30px]">
