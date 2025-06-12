@@ -84,7 +84,7 @@ export default function PortfolioComponent() {
 
   return (
     <>
-      <div className="categories mt-[20px] flex justify-center flex-wrap gap-[15px] overflow-x-scroll w-[80%] mx-auto">
+      <div className="categories mt-[20px] flex justify-center flex-wrap gap-[15px] overflow-x-scroll w-full lg:w-[80%] mx-auto">
         {portfolioCategories.map((category) => (
           <div
             style={{ background: colors.background, color: colors.text }}
