@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
 import { ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'

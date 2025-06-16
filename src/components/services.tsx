@@ -1,5 +1,5 @@
 'use client'
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ArrowRight } from 'lucide-react'

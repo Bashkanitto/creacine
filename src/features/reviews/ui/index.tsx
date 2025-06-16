@@ -1,4 +1,4 @@
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -23,15 +23,15 @@ export default function ReviewsComponent() {
   const videos = [
     {
       id: 0,
-      video: '/images/video1.png',
+      video: '/images/video1.webp',
     },
     {
       id: 1,
-      video: '/images/video2.png',
+      video: '/images/video2.webp',
     },
     {
       id: 2,
-      video: '/images/video3.png',
+      video: '/images/video3.webp',
     },
   ]
 

@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ServicesSection from '@/components/services'
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
 import Reviews from '@/features/reviews/ui'
 import { ArrowRight } from 'lucide-react'
@@ -19,7 +19,7 @@ export default function HomePage() {
           width={1440}
           height={696}
           className="w-[1440px] h-[385px] lg:h-[696px] absolute -z-10 md:flex"
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="hero images"
           priority
         />

@@ -1,4 +1,4 @@
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 
 export function CustomInput({
   type,

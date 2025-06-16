@@ -1,7 +1,7 @@
 'use client'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { colors } from '@/constants/colors'
+import { colors } from '@/shared/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
 import { InstagramIcon, PlusCircle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
@@ -83,7 +83,7 @@ export default function CasesPage() {
           </div>
         </div>
         <div className="flex gap-[30px] mt-[100px]">
-          <Image width={745} height={682} src="/images/casePR1.png" alt="PR image" />
+          <Image width={745} height={682} src="/images/casePR1.webp" alt="PR image" />
           <div
             style={{ background: colors.primary }}
             className="flex flex-col justify-center items-center self-center rounded-[30px] text-white px-[85px] py-[30px] w-[465px] h-[276px]"
@@ -100,7 +100,7 @@ export default function CasesPage() {
             width={651}
             height={726}
             className="max-h-[726px]"
-            src="/images/casePR2.png"
+            src="/images/casePR2.webp"
             alt="PR image"
           />
           <div className="flex flex-col gap-[30px]">
