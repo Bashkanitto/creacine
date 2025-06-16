@@ -23,7 +23,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
       <div className="flex flex-col items-center lg:items-start lg:flex-row h-full">
         <div
           style={{
-            background: noBackground ? 'none' : "url('/images/feedbackBackground.webp')",
+            background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')",
             backgroundRepeat: 'no-repeat',
           }}
           className="w-[90%] lg:w-[80%] h-[224px] lg:h-full rounded-4xl lg:rounded-l-[0px] lg:rounded-r-4xl p-[30px] lg:p-[100px]"
