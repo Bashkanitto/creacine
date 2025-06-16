@@ -2,6 +2,7 @@ import React from 'react'
 import { Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const Footer = () => {
   const t = useTranslations('footer')
@@ -24,10 +25,10 @@ const Footer = () => {
           <p>{t('address')}</p>
           <div className="flex gap-2 mt-[25px]">
             <Link href="#">
-              <img src="/icons/instagram.svg" alt="instagram" />
+              <Image width={24} height={24} src="/icons/instagram.svg" alt="instagram" />
             </Link>
             <Link href="#">
-              <img src="/icons/tiktok.svg" alt="tiktok" />
+              <Image width={24} height={24} src="/icons/tiktok.svg" alt="tiktok" />
             </Link>
           </div>
         </div>
