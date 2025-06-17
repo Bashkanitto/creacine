@@ -52,3 +52,10 @@ button:hover {
 ::-webkit-scrollbar {
   display: none;
 }
+
+table td:last-child {
+  text-align: right;
+}
+table th:last-child {
+  text-align: right;
+}
