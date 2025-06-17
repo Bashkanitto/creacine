@@ -4,7 +4,7 @@ import React from 'react'
 import { useAuth } from '@/hooks/useAuth'
 import { signOut } from 'firebase/auth'
 import { auth } from '@/firebase/client'
-import { FolderOpenDot, Layers, Settings, SquareKanban } from 'lucide-react'
+import { FolderOpenDot, Layers, LogOut, Settings, SquareKanban } from 'lucide-react'
 
 const Sidebar = () => {
   const { user } = useAuth()
@@ -19,9 +19,9 @@ const Sidebar = () => {
   }
 
   return (
-    <aside className="w-[350px] h-full bg-white text-black flex flex-col justify-between">
+    <aside className="w-[350px] h-full flex flex-col justify-between bg-white text-black rounded-xl ">
       <ul>
-        <div className="flex justify-between p-4 shadow-sm">
+        <div className="flex justify-between shadow-sm p-4 rounded-t-xl">
           <h3>2.47</h3>
           <button>
             <Settings />
@@ -61,15 +61,18 @@ const Sidebar = () => {
           </Link>
         </li>
       </ul>
-      <div className="flex gap-4 justify-between items-center shadow-sm shadow-black">
+      <div className="flex gap-4 justify-between items-center shadow-sm rounded-b-xl">
         {user && (
           <div className="p-4">
             <p>{user.email}</p>
             <p>{user.displayName}</p>
           </div>
         )}
-        <button className="flex gap-4 bg-black text-white p-4" onClick={logout}>
-          Выйти
+        <button
+          className="flex gap-4 text-black p-4 hover:text-white hover:bg-black"
+          onClick={logout}
+        >
+          <LogOut />
         </button>
       </div>
     </aside>
