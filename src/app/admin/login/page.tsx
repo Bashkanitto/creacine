@@ -27,7 +27,7 @@ export default function LoginPage() {
     <div className="flex justify-center items-center h-[100vh]">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 w-full max-w-sm bg-white p-6 rounded shadow"
+        className="flex flex-col gap-4 w-full max-w-sm bg-white p-6 rounded-xl shadow"
       >
         <h1 className="text-xl font-semibold">Login</h1>
 
