@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from '@/firebase/client'
+import Sidebar from '@/components/Sidebar'
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true)
@@ -29,5 +30,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   if (loading) return <div className="p-8">Checking auth...</div>
   if (!authenticated && currentPath !== '/admin/login') return null
 
-  return <>{children}</>
+  return (
+    <div className="flex gap-4 h-[100vh] p-4 bg-neutral-100">
+      {authenticated && currentPath !== '/admin/login' && <Sidebar />}
+      <main className="flex-1 overflow-y-auto ">{children}</main>
+    </div>
+  )
 }
