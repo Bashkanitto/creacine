@@ -1,11 +1,10 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import { colors } from '@/shared/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
 import { ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import Paper from '@/components/Paper'
 
 export default function AboutPage() {
   const t = useTranslations('about')
@@ -78,47 +77,56 @@ export default function AboutPage() {
     },
   ]
   return (
-    <div className="max-w-[100vw] lg:w-[1440px] mx-auto px-4">
-      <Header />
-      <section className="pt-[200px] w-[88%] mx-auto">
-        <h2 className="w-full lg:w-2/3 text-center mx-auto">{t('we_create_marketing')}</h2>
-        <div className="flex flex-col lg:flex-row gap-[30px] justify-between items-center mt-[50px] text-white">
+    <section className="max-w-[100vw] lg:w-[1440px] mx-auto px-4 p-2">
+      <div className="pt-[200px] w-full lg:w-[88%] mx-auto">
+        <h2 className="w-full lg:w-2/3 text-center mx-auto text-[42px] lg:text-[58px]">
+          {t('we_create_marketing')}
+        </h2>
+        <div className="flex flex-col lg:flex-row gap-[30px] justify-between items-center mt-[50px] text-white text-center">
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
           >
-            <h3>{t('strategy_title')}</h3>
-            <p>{t('strategy_text')}</p>
+            <h3 className="text-[32px]">{t('strategy_title')}</h3>
+            <p className="text-sm mt-[10px]">{t('strategy_text')}</p>
           </div>
           <div
             style={{ background: colors.primary }}
-            className="w-[390px] h-[220px] p-[35px] rounded-[30px]"
+            className="w-[390px] h-[220px] p-[35px] rounded-[30px] -mx-20"
           >
-            <Image width={75} height={75} src="/icons/laptopIcon.png" alt="laptop icon" />
-            <h3>{t('promotion_title')}</h3>
-            <p>{t('promotion_text')}</p>
+            <Image
+              width={75}
+              height={75}
+              className="mx-auto"
+              src="/icons/laptopIcon.png"
+              alt="laptop icon"
+            />
+            <h3 className="text-[32px]">{t('promotion_title')}</h3>
+            <p className="text-sm mt-[10px]">{t('promotion_text')}</p>
           </div>
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
           >
-            <h3>{t('content_title')}</h3>
-            <p>{t('content_text')}</p>
+            <h3 className="text-[32px]">{t('content_title')}</h3>
+            <p className="text-sm mt-[10px]">{t('content_text')}</p>
           </div>
         </div>
 
-        <p className="text-center mt-[120px]" style={{ color: colors.text }}>
+        <p className="text-center mt-[50px] lg:mt-[120px] text-sm" style={{ color: colors.text }}>
           {t('what_we_do')}
         </p>
-        <h2 className="text-center w-[60%] mx-auto">{t('our_services')}</h2>
+        <h2 className="text-center w-full lg:w-[60%] mx-auto text-[42px] lg:text-[58px]">
+          {t('our_services')}
+        </h2>
 
         <div className="aboutSteps mt-[50px]">
           <div
             style={{ background: colors.primary }}
             className="flex flex-col lg:flex-row p-[35px] gap-[50px] text-white rounded-[35px]"
           >
-            <h3 className="w-full">{t('comprehensive_marketing')}</h3>
-            <ul className="w-full list-dotted text-[30px] list-disc ml-[30px] lg:ml-0 p-2">
+            <h3 className="w-full text-[42px] lg:text-[58px]">{t('comprehensive_marketing')}</h3>
+            <ul className="w-full list-dotted text-[18px] lg:text-[30px] list-disc ml-[30px] lg:ml-0 p-2">
               <li>{t('instagram')}</li>
               <li>{t('tiktok')}</li>
               <li>{t('seo_ads')}</li>
@@ -133,27 +141,20 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-[50px]">
             {aboutSteps.map((step, index) => (
-              <div
-                key={index}
-                style={{ background: colors.background }}
-                className="p-[35px] rounded-[35px]"
-              >
-                <h3>{t(step.h3)}</h3>
+              <Paper key={index} className="p-[35px] rounded-[35px]">
+                <h3 className="text-[32px]">{t(step.h3)}</h3>
                 <ul className="mt-2 list-disc">
                   {step.list.map((listItem, index) => (
-                    <li className="ml-6" key={index}>
+                    <li className="ml-6 text-[18px]" key={index}>
                       {t(listItem)}
                     </li>
                   ))}
                 </ul>
-              </div>
+              </Paper>
             ))}
           </div>
-          <div
-            style={{ background: colors.background }}
-            className="mt-[35px] p-[35px] rounded-[35px]"
-          >
-            <h3 className="w-full">{t('branding')}</h3>
+          <Paper className="mt-[35px] p-[35px] rounded-[35px]">
+            <h3 className="w-full text-[32px]">{t('branding')}</h3>
             <ul className="w-full list-dotted list-disc ml-10 mt-2">
               <li>{t('brand_positioning')}</li>
               <li>{t('naming_slogan')}</li>
@@ -162,7 +163,7 @@ export default function AboutPage() {
               <li>{t('digital_offline_assets')}</li>
               <li>{t('tone_of_voice')}</li>
             </ul>
-          </div>
+          </Paper>
         </div>
 
         <div className="flex flex-col items-center lg:flex-row gap-[35px] mt-[50px] lg:mt-[200px]">
@@ -176,11 +177,10 @@ export default function AboutPage() {
             <Image width={400} height={360} src="/images/about3.png" alt="marketing examples" />
           </Link>
         </div>
-      </section>
+      </div>
       <div className="mt-[100px]">
         <FeedbackForm />
       </div>
-      <Footer />
-    </div>
+    </section>
   )
 }

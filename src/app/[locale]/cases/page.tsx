@@ -1,11 +1,10 @@
 'use client'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import { colors } from '@/shared/constants/colors'
 import { FeedbackForm } from '@/features/feedbackForm/ui'
 import { InstagramIcon, PlusCircle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Paper from '@/components/Paper'
 
 export default function CasesPage() {
   const t = useTranslations('cases')
@@ -16,21 +15,26 @@ export default function CasesPage() {
     'case_targeting_key_visual',
   ]
   return (
-    <div className="w-[1440px] mx-auto">
-      <Header />
-      <section className='w-full h-[814px] bg-[url("/images/casesHero.png")] bg-no-repeat'></section>
-      <section className="mt-[100px] w-[88%] mx-auto mt">
-        <div className="flex justify-end">
-          <div className="w-[50%] mt-[20px]">
-            <p className="text-[14px]" style={{ color: colors.text }}>
+    <section aria-label="Секция кейсов" className="w-full lg:w-[1440px] mx-auto">
+      <div className='w-full h-[500px] lg:h-[814px] bg-[url("/images/casesHero.png")] bg-no-repeat bg-cover'></div>
+
+      <div className="mt-[50px] lg:mt-[100px] w-[88%] mx-auto">
+        <div className="flex justify-center lg:justify-end">
+          <div className="w-full lg:w-[50%] mt-[20px]">
+            <p className="text-[14px] text-center lg:text-start" style={{ color: colors.text }}>
               {t('case')}
             </p>
-            <h2 className="w-[65%]">СОЗДАЕМ МИР ЗАБОТЫ И ЗДОРОВЬЯ</h2>
-            <p className="text-[30px] mt-[20px]" style={{ color: colors.text }}>
+            <h2 className="w-full lg:w-[65%] text-center lg:text-start text-[42px] lg:text-[58px]">
+              {t('createCareWorld')}
+            </h2>
+            <p
+              className="text-[18px] lg:text-[30px] mt-[20px] text-center lg:text-start"
+              style={{ color: colors.text }}
+            >
               {t('splat_description')}
             </p>
             <button
-              className="flex px-4 py-4 rounded-full text-white mt-[50px] gap-2 "
+              className="flex px-4 py-4 rounded-full text-white mt-[50px] gap-2 mx-auto lg:mx-0"
               style={{ background: colors.primary }}
             >
               <InstagramIcon />
@@ -38,28 +42,27 @@ export default function CasesPage() {
             </button>
           </div>
         </div>
-        <div className="flex justify-between items-center  mt-[50px] text-white">
-          <div
+
+        <div className="flex flex-col lg:flex-row  justify-between items-center gap-4 lg:gap-0 mt-[50px] text-white p-4">
+          <Paper
             style={{ background: colors.primary }}
-            className="w-[390px] h-[220px] p-[35px] rounded-[30px] flex flex-col justify-between"
+            className="w-[390px] h-[220px] p-[35px] rounded-[30px] flex flex-col justify-between "
           >
             <p className="text-[30px]/8">{t('microblogger_posts')}</p>
             <p className="text-[72px]">250+</p>
-          </div>
-          <div
+          </Paper>
+          <Paper
             style={{
-              background: colors.background,
               color: colors.black,
               borderColor: colors.border,
             }}
-            className="w-[390px] h-[286px] p-[35px] rounded-[30px] border flex flex-col justify-between"
+            className="w-[390px] h-[286px]  flex flex-col justify-between p-[35px] rounded-[30px] border"
           >
             <p className="text-[30px]/8">{t('subscribers')}</p>
             <p className="text-[72px]">+5000</p>
-          </div>
-          <div
+          </Paper>
+          <Paper
             style={{
-              background: colors.background,
               color: colors.black,
               borderColor: colors.border,
             }}
@@ -67,35 +70,39 @@ export default function CasesPage() {
           >
             <p className="text-[30px]/8">{t('account_engagement_increase')}</p>
             <p className="text-[72px]">4373%</p>
-          </div>
+          </Paper>
         </div>
-        <div className="flex justify-end mt-[100px]">
-          <div className="w-[50%] mt-[20px]">
-            <h2>{t('client_task_question')}</h2>
-            <p className="text-[30px] mt-[20px]" style={{ color: colors.text }}>
+
+        <div className="flex justify-center lg:justify-end mt-[100px]">
+          <div className="w-full lg:w-[50%] mt-[20px]">
+            <h2 className="text-[42px] lg:text-[58px]">{t('client_task_question')}</h2>
+            <p className="text-[18px] lg:text-[30px] mt-[20px]" style={{ color: colors.text }}>
               {t('splat_goal')}
             </p>
-            <ul className="list-disc ml-12 mt-[20px]">
+            <ul
+              style={{ color: colors.text }}
+              className="list-disc ml-12 mt-[20px] text-[18px] lg:text-[30px]"
+            >
               <li>{t('increase_market_awareness')}</li>
               <li>{t('build_active_community')}</li>
               <li>{t('develop_smm_identity')}</li>
             </ul>
           </div>
         </div>
-        <div className="flex gap-[30px] mt-[100px]">
+        <div className="flex flex-col lg:flex-row gap-[30px] mt-[100px]">
           <Image width={745} height={682} src="/images/casePR1.webp" alt="PR image" />
           <div
             style={{ background: colors.primary }}
-            className="flex flex-col justify-center items-center self-center rounded-[30px] text-white px-[85px] py-[30px] w-[465px] h-[276px]"
+            className="flex flex-col justify-center items-center w-full lg:w-[465px] h-[276px] self-center rounded-[30px] text-white px-0 lg:px-[85px] py-[30px] "
           >
-            <p className="text-center text-[30px]">{t('launched_pr_campaign')}</p>
+            <p className="text-center text-[18px] lg:text-[30px]">{t('launched_pr_campaign')}</p>
             <button>
               <PlusCircle className="w-10 h-10" />
             </button>
           </div>
         </div>
 
-        <div className="flex gap-[50px] mt-[100px]">
+        <div className="flex flex-col lg:flex-row gap-[50px] mt-[30px] lg:mt-[100px]">
           <Image
             width={651}
             height={726}
@@ -116,16 +123,15 @@ export default function CasesPage() {
                 <button>
                   <PlusCircle className="w-10 h-10" />
                 </button>
-                <p className="text-center text-[30px]">{t(cases)}</p>
+                <p className="text-center text-[18px] lg:text-[30px]">{t(cases)}</p>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </div>
       <div className="mt-[100px]">
         <FeedbackForm />
       </div>
-      <Footer />
-    </div>
+    </section>
   )
 }

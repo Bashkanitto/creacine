@@ -8,11 +8,11 @@ const Footer = () => {
   const t = useTranslations('footer')
 
   return (
-    <footer className="bg-black h-full lg:h-[412px] w-full text-white">
+    <footer className="bg-black h-full lg:h-[412px] w-full lg:w-[1440px] mx-auto text-white">
       <div className="flex flex-col lg:flex-row gap-[50px] lg:pt-[100px] p-4 lg:px-[100px]">
         <div className="w-full">
-          <h2>2.47</h2>
-          <p className="flex gap-2 items-center text-[20px] lg:text-[30px]">
+          <h2 className="text-[58px]">2.47</h2>
+          <p className="flex gap-2 items-center text-[20px] lg:text-[30px] mt-[25px]">
             <Mail />
             dvasoroksem@gmail.com
           </p>
@@ -33,8 +33,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="mt-4 lg:mt-[60px] w-[87%] mx-auto text-neutral-700" />
-      <p className="flex justify-center mt-[30px] p-4">
+      <hr className="mt-4 lg:mt-[20px] w-[87%] mx-auto text-neutral-700" />
+      <p className="flex justify-center mt-[30px] p-4 text-sm">
         {t('dvasoroksemGroupAllRightsReserveded')}
       </p>
     </footer>

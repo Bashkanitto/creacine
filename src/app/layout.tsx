@@ -3,7 +3,8 @@ import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'DVASOROKSEM',
-  description: 'Мы создаем маркетинг, который работает',
+  description:
+    'Мы создаем маркетинг, который работает. Увеличьте продажи и узнаваемость вместе с нами.',
 }
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
-      <body>{children}</body>
+      <body className="font-loose">{children}</body>
     </html>
   )
 }

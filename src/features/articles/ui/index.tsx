@@ -1,3 +1,4 @@
+import Paper from '@/components/Paper'
 import { colors } from '@/shared/constants/colors'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -37,22 +38,20 @@ export default function ArticlesComponent() {
 
   return (
     <>
-      <p className="text-center" style={{ color: colors.text }}>
+      <p className="text-center text-sm" style={{ color: colors.text }}>
         {t('subtitle')}
       </p>
-      <h2 className="text-center w-full lg:w-[60%] mx-auto">{t('title')}</h2>
-      <div className="categories mt-[20px] flex justify-between gap-[15px] overflow-x-scroll">
+      <h2 className="text-center w-full lg:w-[60%] mx-auto text-[42px] lg:text-[58px]">
+        {t('title')}
+      </h2>
+      <div className="categories mt-[20px] lg:mt-[50px] flex justify-between gap-[15px] overflow-x-scroll">
         {categories.map((category) => (
-          <div
-            style={{ background: colors.background, color: colors.text }}
-            className="py-2 px-4 rounded-full "
-            key={category}
-          >
+          <Paper style={{ color: colors.text }} className="py-2 px-4 rounded-full " key={category}>
             <h4>{t(category)}</h4>
-          </div>
+          </Paper>
         ))}
       </div>
-      <div className="mt-[50px] flex gap-[30px] overflow-x-scroll">
+      <div className="mt-[50px] flex flex-col lg:flex-row gap-[30px]">
         {articles.map((article) => (
           <article
             style={{ background: colors.primary }}
@@ -67,7 +66,9 @@ export default function ArticlesComponent() {
               alt="article image"
             />
             <div className="flex flex-col justify-between items-start">
-              <p className="text-white text-[30px] leading-tight">{t(article.messageKey)}</p>
+              <p className="text-white text-[18px] lg:text-[30px] leading-tight">
+                {t(article.messageKey)}
+              </p>
               <button style={{ background: 'white' }} className="py-2 px-4 rounded-full">
                 {t(article.category)}
               </button>

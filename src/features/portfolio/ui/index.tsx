@@ -1,3 +1,4 @@
+import Paper from '@/components/Paper'
 import { colors } from '@/shared/constants/colors'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -83,19 +84,15 @@ export default function PortfolioComponent() {
   ]
 
   return (
-    <>
-      <div className="categories mt-[20px] flex justify-center flex-wrap gap-[15px] overflow-x-scroll w-full lg:w-[80%] mx-auto">
+    <section aria-label="Секция потфолио">
+      <div className="categories mt-[20px] flex flex-col lg:flex-row justify-center flex-wrap gap-[15px] overflow-x-scroll w-full lg:w-[80%] mx-auto">
         {portfolioCategories.map((category) => (
-          <div
-            style={{ background: colors.background, color: colors.text }}
-            className="py-2 px-4 rounded-full "
-            key={category}
-          >
+          <Paper style={{ color: colors.text }} className="py-2 px-4 rounded-full " key={category}>
             <h4>{t(category)}</h4>
-          </div>
+          </Paper>
         ))}
       </div>
-      <div className="mt-[50px] flex flex-wrap justify-center gap-[30px]">
+      <div className="mt-[50px] flex flex-wrap justify-center gap-[30px] p-4">
         {portfolios.map((portfolio) => (
           <Link href={portfolio.link} key={portfolio.id}>
             <Image
@@ -103,11 +100,11 @@ export default function PortfolioComponent() {
               height={portfolio.height}
               src={portfolio.image}
               alt="portfolio image"
-              className="min-w-[400px] max-h-[360px] rounded-[30px]"
+              className="lg:min-w-[400px] max-h-[360px] rounded-[30px]"
             />
           </Link>
         ))}
       </div>
-    </>
+    </section>
   )
 }

@@ -1,8 +1,9 @@
 import { colors } from '@/shared/constants/colors'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Paper from '@/components/Paper'
 
-export default function ReviewsComponent() {
+export default function ReviewsSection() {
   const t = useTranslations('reviews')
   const reviews = [
     {
@@ -36,23 +37,26 @@ export default function ReviewsComponent() {
   ]
 
   return (
-    <>
-      <p className="text-center" style={{ color: colors.text }}>
+    <section className="about w-full lg:w-[86%] mx-auto mt-[50px] lg:mt-[200px] p-2">
+      <p className="text-center text-sm" style={{ color: colors.text }}>
         {t('clients')}
       </p>
-      <h2 className="text-center mt-[20px] w-[100%] lg:w-[60%] mx-auto">{t('realCases')}</h2>
+      <h2 className="text-center mt-[20px] w-full lg:w-[60%] mx-auto text-[42px] lg:text-[58px]">
+        {t('realCases')}
+      </h2>
       <div className="flex flex-col lg:flex-row gap-[30px] overflow-x-scroll mt-[50px]">
         {reviews.map((review) => (
-          <div
-            style={{ background: colors.background }}
+          <Paper
             key={review.id}
             className="flex flex-col gap-[25px] items-center p-4 lg:p-[50px] rounded-[30px]"
           >
-            <p className="text-center w-full lg:w-[80%]">{t(review.comment)}</p>
-            <Image width={75} height={75} src={review.image} alt="author avatar" />
-            <h3 className="text-center">{t(review.name)}</h3>
-            <p style={{ color: colors.text }}>{t(review.role)}</p>
-          </div>
+            <p className="font-ivy text-md text-center w-full lg:w-[80%]">{t(review.comment)}</p>
+            <Image width={75} height={75} src={review.image} alt="author avatar" priority />
+            <h3 className="text-center text-[26px] lg:text-[32px]">{t(review.name)}</h3>
+            <p style={{ color: colors.text }} className="text-sm">
+              {t(review.role).toLocaleUpperCase()}
+            </p>
+          </Paper>
         ))}
       </div>
       <div className="video overflow-x-scroll mt-[50px] flex gap-[30px]">
@@ -60,6 +64,6 @@ export default function ReviewsComponent() {
           <Image key={video.id} width={395} height={760} src={video.video} alt="author avatar" />
         ))}
       </div>
-    </>
+    </section>
   )
 }

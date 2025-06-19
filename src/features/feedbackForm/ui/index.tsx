@@ -19,28 +19,31 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   ]
 
   return (
-    <section className="w-full h-full lg:h-[752px] mt-[30px] lg:mt-0">
+    <section
+      aria-label="Секция обратной формы"
+      className="w-full lg:min-w-[570px] h-full lg:h-[752px] mt-[30px] lg:mt-0"
+    >
       <div className="flex flex-col items-center lg:items-start lg:flex-row h-full">
         <div
           style={{
             background: noBackground ? 'none' : "url('/images/feedbackBackground.jpg')",
             backgroundRepeat: 'no-repeat',
           }}
-          className="w-[90%] lg:w-[80%] h-[224px] lg:h-full rounded-4xl lg:rounded-l-[0px] lg:rounded-r-4xl p-[30px] lg:p-[100px]"
+          className="w-[90%] lg:w-[80%] h-[224px] lg:h-full rounded-4xl lg:rounded-l-[0px] lg:rounded-r-4xl p-[30px] "
         >
-          <h1 className="text-[42px] lg:text-[58px] w-full lg:w-[70%]  text-white text-center lg:text-start">
+          <h2 className="font-loose w-full lg:w-[90%] text-white text-center lg:text-start text-[42px] lg:text-[58px] mt-0 lg:mt-[100px] ml-0 lg:ml-[70px]">
             {t('ReadyToDiscuss')}
-          </h1>
+          </h2>
           <Link
             href="#"
-            className="mt-2 underline flex gap-2 text-white justify-center lg:justify-start"
+            className="mt-2 underline flex gap-2 text-white justify-center lg:justify-start mt-0 lg:mt-[30px] ml-0 lg:ml-[70px]"
           >
             <LinkIcon />
-            {t('downloadBrif')}
+            <span className="font-loose">{t('downloadBrif')}</span>
           </Link>
         </div>
 
-        <form className="w-full px-4 py-4">
+        <form className="w-full pl-4 py-4 pr-4 lg:pr-[100px]">
           <div className="flex flex-col lg:flex-row mt-[30px] lg:mt-[100px] gap-4 lg:gap-[30px] justify-between">
             <CustomInput type="text" placeholder={t('name')} />
             <CustomInput type="text" placeholder="+7" />
@@ -80,7 +83,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
 
           <label
             style={{ color: colors.text }}
-            className="flex gap-1 mt-4 lg:mt-[35px]"
+            className="flex gap-1 mt-4 lg:mt-[35px] underline"
             htmlFor="file"
           >
             <Paperclip />
