@@ -1,7 +1,6 @@
 {
   "title": "title",
   "hello": "Hello, world!",
-  "ourServices": "Our services",
   "provenByResults": "PROVEN BY RESULTS",
   "howWeHelpBusinesses": "How we help businesses grow",
   "seeAllCases": "See all cases",
@@ -34,6 +33,8 @@
     "address": "st. Kalibek Kuanyshbaev, 11B, Astana, Kazakhstan"
   },
   "services": {
+    "ourServices": "Our services",
+    "what_we_do": "WHAT WE DO",
     "integratedMarketing": "Integrated marketingг",
     "fullCycleSolutionsForGrowth": "A complete cycle of growth solutions",
     "marketingStrategies": "Marketing strategies",
@@ -117,9 +118,9 @@
     "promotion_text": "Digital, SMM, advertising and PR",
     "content_title": "Content",
     "content_text": "Creative that engages and sells",
-    "our_services": "Our services"
+    "our_services": "Our services",
+    "what_we_do": "WHAT WE DO"
   },
-  "what_we_do": "WHAT WE DO",
   "cases": {
     "case_content_brand_values": "Created content that conveys brand values and highlights expertise",
     "case_unique_brand_design": "Developed unique brand design: from boxes to booklets",
@@ -136,7 +137,8 @@
     "increase_market_awareness": "Increase market awareness",
     "build_active_community": "Build an active community around the brand",
     "develop_smm_identity": "Develop SMM identity that speaks the same language as the audience",
-    "launched_pr_campaign": "Launched a large-scale PR campaign with micro and macro influencers"
+    "launched_pr_campaign": "Launched a large-scale PR campaign with micro and macro influencers",
+    "createCareWorld": "WE CREATE A WORLD OF CARE "
   },
 
   "marketingWitchworks": "MARKETING THAT WORKS",
