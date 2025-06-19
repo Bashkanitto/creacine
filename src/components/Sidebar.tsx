@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import { useAuth } from '@/hooks/useAuth'
+import { useAuth } from '@/shared/hooks/useAuth'
 import { signOut } from 'firebase/auth'
 import { auth } from '@/firebase/client'
 import { FolderOpenDot, Layers, LogOut, Settings, SquareKanban } from 'lucide-react'
