@@ -1,10 +1,45 @@
 @import 'tailwindcss';
 
-@font-face {
-  font-family: 'LooseWide';
-  src: url('/fonts/Loos_Wide_Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+@layer base {
+  @font-face {
+    font-family: 'IvyPrestoDisplay';
+    src: url('/fonts/IvyPrestoDisplay.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'LoosWide';
+    src: url('/fonts/LoosWide-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'LoosWide';
+    src: url('/fonts/LoosWide-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+.font-ivy {
+  font-family: 'IvyPrestoDisplay';
+}
+.font-loose {
+  font-family: 'LoosWide', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -3%;
 }
 
 :root {
@@ -29,22 +64,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'LooseWide', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: bold;
-  line-height: 120%;
-}
-h2 {
-  font-size: 52px;
-}
-h3 {
-  font-size: 32px;
-}
+
 button:hover {
   cursor: pointer;
 }
