@@ -1,3 +1,4 @@
+import AnimationSection from '@/components/AnimationSection'
 import Paper from '@/components/Paper'
 import { colors } from '@/shared/constants/colors'
 import { useTranslations } from 'next-intl'
@@ -37,7 +38,7 @@ export default function ArticlesComponent() {
   ]
 
   return (
-    <>
+    <AnimationSection>
       <p className="text-center text-sm" style={{ color: colors.text }}>
         {t('subtitle')}
       </p>
@@ -76,6 +77,6 @@ export default function ArticlesComponent() {
           </article>
         ))}
       </div>
-    </>
+    </AnimationSection>
   )
 }

@@ -2,6 +2,7 @@ import { colors } from '@/shared/constants/colors'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Paper from '@/components/Paper'
+import AnimationSection from '@/components/AnimationSection'
 
 export default function ReviewsSection() {
   const t = useTranslations('reviews')
@@ -37,7 +38,7 @@ export default function ReviewsSection() {
   ]
 
   return (
-    <section className="about w-full lg:w-[86%] mx-auto mt-[50px] lg:mt-[200px] p-2">
+    <AnimationSection className="about w-full lg:w-[86%] mx-auto mt-[50px] lg:mt-[200px] p-2">
       <p className="text-center text-sm" style={{ color: colors.text }}>
         {t('clients')}
       </p>
@@ -64,6 +65,6 @@ export default function ReviewsSection() {
           <Image key={video.id} width={395} height={760} src={video.video} alt="author avatar" />
         ))}
       </div>
-    </section>
+    </AnimationSection>
   )
 }

@@ -6,6 +6,7 @@ import { colors } from '@/shared/constants/colors'
 import { CustomButton } from '../../../components/CustomButton'
 import Link from 'next/link'
 import { useState } from 'react'
+import AnimationSection from '@/components/AnimationSection'
 
 export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   const [selectedAim, setSelectedAim] = useState<number | null>(null)
@@ -19,7 +20,7 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
   ]
 
   return (
-    <section
+    <AnimationSection
       aria-label="Секция обратной формы"
       className="w-full lg:min-w-[570px] h-full lg:h-[752px] mt-[30px] lg:mt-0"
     >
@@ -95,6 +96,6 @@ export function FeedbackForm({ noBackground }: { noBackground?: boolean }) {
           </CustomButton>
         </form>
       </div>
-    </section>
+    </AnimationSection>
   )
 }

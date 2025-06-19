@@ -5,6 +5,7 @@ import { InstagramIcon, PlusCircle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Paper from '@/components/Paper'
+import AnimationSection from '@/components/AnimationSection'
 
 export default function CasesPage() {
   const t = useTranslations('cases')
@@ -16,7 +17,7 @@ export default function CasesPage() {
   ]
   return (
     <section aria-label="Секция кейсов" className="w-full lg:w-[1440px] mx-auto">
-      <div className='w-full h-[500px] lg:h-[814px] bg-[url("/images/casesHero.png")] bg-no-repeat bg-cover'></div>
+      <AnimationSection className='w-full h-[500px] lg:h-[814px] bg-[url("/images/casesHero.png")] bg-no-repeat bg-cover'></AnimationSection>
 
       <div className="mt-[50px] lg:mt-[100px] w-[88%] mx-auto">
         <div className="flex justify-center lg:justify-end">
@@ -43,7 +44,7 @@ export default function CasesPage() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row  justify-between items-center gap-4 lg:gap-0 mt-[50px] text-white p-4">
+        <AnimationSection className="flex flex-col lg:flex-row  justify-between items-center gap-4 lg:gap-0 mt-[50px] text-white p-4">
           <Paper
             style={{ background: colors.primary }}
             className="w-[390px] h-[220px] p-[35px] rounded-[30px] flex flex-col justify-between "
@@ -71,9 +72,9 @@ export default function CasesPage() {
             <p className="text-[30px]/8">{t('account_engagement_increase')}</p>
             <p className="text-[72px]">4373%</p>
           </Paper>
-        </div>
+        </AnimationSection>
 
-        <div className="flex justify-center lg:justify-end mt-[100px]">
+        <AnimationSection className="flex justify-center lg:justify-end mt-[100px]">
           <div className="w-full lg:w-[50%] mt-[20px]">
             <h2 className="text-[42px] lg:text-[58px]">{t('client_task_question')}</h2>
             <p className="text-[18px] lg:text-[30px] mt-[20px]" style={{ color: colors.text }}>
@@ -88,7 +89,7 @@ export default function CasesPage() {
               <li>{t('develop_smm_identity')}</li>
             </ul>
           </div>
-        </div>
+        </AnimationSection>
         <div className="flex flex-col lg:flex-row gap-[30px] mt-[100px]">
           <Image width={745} height={682} src="/images/casePR1.webp" alt="PR image" />
           <div
@@ -102,7 +103,7 @@ export default function CasesPage() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-[50px] mt-[30px] lg:mt-[100px]">
+        <AnimationSection className="flex flex-col lg:flex-row gap-[50px] mt-[30px] lg:mt-[100px]">
           <Image
             width={651}
             height={726}
@@ -127,7 +128,7 @@ export default function CasesPage() {
               </div>
             ))}
           </div>
-        </div>
+        </AnimationSection>
       </div>
       <div className="mt-[100px]">
         <FeedbackForm />

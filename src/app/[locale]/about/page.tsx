@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import Paper from '@/components/Paper'
+import AnimationSection from '@/components/AnimationSection'
 
 export default function AboutPage() {
   const t = useTranslations('about')
@@ -79,10 +80,12 @@ export default function AboutPage() {
   return (
     <section className="max-w-[100vw] lg:w-[1440px] mx-auto px-4 p-2">
       <div className="pt-[200px] w-full lg:w-[88%] mx-auto">
-        <h2 className="w-full lg:w-2/3 text-center mx-auto text-[42px] lg:text-[58px]">
-          {t('we_create_marketing')}
-        </h2>
-        <div className="flex flex-col lg:flex-row gap-[30px] justify-between items-center mt-[50px] text-white text-center">
+        <AnimationSection>
+          <h2 className="w-full lg:w-2/3 text-center mx-auto text-[42px] lg:text-[58px]">
+            {t('we_create_marketing')}
+          </h2>
+        </AnimationSection>
+        <AnimationSection className="flex flex-col lg:flex-row gap-[30px] justify-between items-center mt-[50px] text-white text-center">
           <div
             style={{ background: colors.black }}
             className="w-[260px] h-[150px] p-[35px] rounded-[30px]"
@@ -111,16 +114,18 @@ export default function AboutPage() {
             <h3 className="text-[32px]">{t('content_title')}</h3>
             <p className="text-sm mt-[10px]">{t('content_text')}</p>
           </div>
-        </div>
+        </AnimationSection>
 
-        <p className="text-center mt-[50px] lg:mt-[120px] text-sm" style={{ color: colors.text }}>
-          {t('what_we_do')}
-        </p>
-        <h2 className="text-center w-full lg:w-[60%] mx-auto text-[42px] lg:text-[58px]">
-          {t('our_services')}
-        </h2>
+        <AnimationSection>
+          <p className="text-center mt-[50px] lg:mt-[120px] text-sm" style={{ color: colors.text }}>
+            {t('what_we_do')}
+          </p>
+          <h2 className="text-center w-full lg:w-[60%] mx-auto text-[42px] lg:text-[58px]">
+            {t('our_services')}
+          </h2>
+        </AnimationSection>
 
-        <div className="aboutSteps mt-[50px]">
+        <AnimationSection className="aboutSteps mt-[50px]">
           <div
             style={{ background: colors.primary }}
             className="flex flex-col lg:flex-row p-[35px] gap-[50px] text-white rounded-[35px]"
@@ -164,9 +169,9 @@ export default function AboutPage() {
               <li>{t('tone_of_voice')}</li>
             </ul>
           </Paper>
-        </div>
+        </AnimationSection>
 
-        <div className="flex flex-col items-center lg:flex-row gap-[35px] mt-[50px] lg:mt-[200px]">
+        <AnimationSection className="flex flex-col items-center lg:flex-row gap-[35px] mt-[50px] lg:mt-[200px]">
           <Link href="#" className="rounded-[35px]">
             <Image width={400} height={360} src="/images/about1.png" alt="marketing examples" />
           </Link>
@@ -176,7 +181,7 @@ export default function AboutPage() {
           <Link href="#" className="rounded-[35px]">
             <Image width={400} height={360} src="/images/about3.png" alt="marketing examples" />
           </Link>
-        </div>
+        </AnimationSection>
       </div>
       <div className="mt-[100px]">
         <FeedbackForm />

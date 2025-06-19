@@ -6,13 +6,14 @@ import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { CertificatesSection } from '@/features/certificates/ui'
+import AnimationSection from '@/components/AnimationSection'
 
 export default function HomePage() {
   const t = useTranslations()
 
   return (
     <main className="max-w-[100vw] lg:w-[1440px] mx-auto ">
-      <section aria-label="главная секция" className="hero h-[385px] lg:h-[696px]">
+      <AnimationSection aria-label="главная секция" className="hero h-[385px] lg:h-[696px]">
         <Image
           width={1440}
           height={696}
@@ -21,9 +22,9 @@ export default function HomePage() {
           alt="Главная страница"
           priority
         />
-      </section>
+      </AnimationSection>
 
-      <section
+      <AnimationSection
         aria-label="Секция приветствия"
         className="flex flex-col lg:flex-row gap-[30px] w-[86%] mx-auto mt-[32px] lg:mt-[100px]"
       >
@@ -75,9 +76,9 @@ export default function HomePage() {
             {t('seeAllCases')} <ArrowRight />
           </button>
         </div>
-      </section>
+      </AnimationSection>
 
-      <section
+      <AnimationSection
         aria-label="Секция команды"
         className="w-full lgw-[86%] mx-auto mt-[50px] lg:mt-[200px] flex flex-col items-center lg:items-start lg:flex-row gap-[50px] p-2"
       >
@@ -105,7 +106,7 @@ export default function HomePage() {
             {t('lookNumbers')} <ArrowRight />
           </button>
         </div>
-      </section>
+      </AnimationSection>
 
       <ServicesSection />
       <ReviewsSection />

@@ -1,3 +1,4 @@
+import AnimationSection from '@/components/AnimationSection'
 import Paper from '@/components/Paper'
 import { colors } from '@/shared/constants/colors'
 import { useTranslations } from 'next-intl'
@@ -84,7 +85,7 @@ export default function PortfolioComponent() {
   ]
 
   return (
-    <section aria-label="Секция потфолио">
+    <AnimationSection aria-label="Секция потфолио">
       <div className="categories mt-[20px] flex flex-col lg:flex-row justify-center flex-wrap gap-[15px] overflow-x-scroll w-full lg:w-[80%] mx-auto">
         {portfolioCategories.map((category) => (
           <Paper style={{ color: colors.text }} className="py-2 px-4 rounded-full " key={category}>
@@ -105,6 +106,6 @@ export default function PortfolioComponent() {
           </Link>
         ))}
       </div>
-    </section>
+    </AnimationSection>
   )
 }

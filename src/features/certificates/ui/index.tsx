@@ -1,3 +1,4 @@
+import AnimationSection from '@/components/AnimationSection'
 import { colors } from '@/shared/constants/colors'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -6,7 +7,7 @@ export function CertificatesSection() {
   const t = useTranslations()
 
   return (
-    <section
+    <AnimationSection
       aria-label="секция сертификатов"
       style={{ background: colors.background }}
       className="certificates mt-[100px] p-4 lg:p-[100px] flex gap-[40px] h-full lg:h-[990px]"
@@ -120,6 +121,6 @@ export function CertificatesSection() {
           />
         </div>
       </div>
-    </section>
+    </AnimationSection>
   )
 }

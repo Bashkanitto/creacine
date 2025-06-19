@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import AnimationSection from '@/components/AnimationSection'
 
 function ServicesSection() {
   const t = useTranslations('services')
@@ -54,7 +55,7 @@ function ServicesSection() {
   ]
 
   return (
-    <section
+    <AnimationSection
       aria-label="Секция о нас"
       className="services w-[86%] mx-auto mt-[100px] lg:mt-[200px]"
     >
@@ -97,7 +98,7 @@ function ServicesSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimationSection>
   )
 }
 export default ServicesSection
