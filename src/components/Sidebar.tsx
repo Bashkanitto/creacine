@@ -4,7 +4,14 @@ import React from 'react'
 import { useAuth } from '@/shared/hooks/useAuth'
 import { signOut } from 'firebase/auth'
 import { auth } from '@/firebase/client'
-import { FolderOpenDot, Layers, LogOut, Settings, SquareKanban } from 'lucide-react'
+import {
+  BriefcaseBusiness,
+  FolderOpenDot,
+  Layers,
+  LogOut,
+  Settings,
+  SquareKanban,
+} from 'lucide-react'
 
 const Sidebar = () => {
   const { user } = useAuth()
@@ -47,6 +54,17 @@ const Sidebar = () => {
           >
             <Layers />
             Услуги
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/admin/feedbacks"
+            className={`flex gap-2 p-4 hover:bg-blue-50 ${
+              pathname.startsWith('/admin/feedbacks') ? 'bg-blue-200' : ''
+            }`}
+          >
+            <BriefcaseBusiness />
+            Заявки
           </Link>
         </li>
         <li>

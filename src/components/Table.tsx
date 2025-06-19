@@ -30,7 +30,7 @@ export const CustomTable = <T,>({ data, columns }: TableProps<T>) => {
 
           {data.length === 0 && (
             <tr>
-              <td colSpan={data.length} className="px-4 py-2 text-center text-gray-500">
+              <td colSpan={columns.length} className="px-4 py-2 text-center text-gray-500">
                 Нет данных.
               </td>
             </tr>
